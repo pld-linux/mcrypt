@@ -1,17 +1,18 @@
 Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
-Version:	2.5.5
-Release:	3
+Version:	2.5.6
+Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
-Source0:	http://hq.hellug.gr/~mcrypt/mcrypt/%{name}-%{version}.tar.gz
+Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
+URL:		http://mcrypt.hellug.gr/mcrypt/
 BuildRequires:	libmcrypt-devel >= 2.4.0
 BuildRequires:	mhash-devel
 BuildRequires:	gettext-devel
