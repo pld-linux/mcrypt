@@ -46,7 +46,7 @@ automake
 LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--without-included-gettext
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
