@@ -47,7 +47,7 @@ rm -f doc/mcrypt.info missing
 gettextize --copy --force
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	--without-included-gettext
 %{__make}
