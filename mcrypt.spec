@@ -59,8 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR="$RPM_BUILD_ROOT" install
 
-gzip -9nf LSM AUTHORS NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
-
 %find_lang %{name}
 
 %clean
@@ -68,6 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz
+%doc LSM AUTHORS NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
