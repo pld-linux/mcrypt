@@ -48,8 +48,8 @@ kompatybilno¶æ z crypt(1).
 rm -f doc/mcrypt.info missing
 gettextize --copy --force
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--without-included-gettext
 %{__make}
