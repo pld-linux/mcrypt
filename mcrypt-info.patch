@@ -1,0 +1,27 @@
+diff -Nru mcrypt-2.2.2/doc/mcrypt.texi mcrypt-2.2.2.new/doc/mcrypt.texi
+--- mcrypt-2.2.2/doc/mcrypt.texi	Thu Jun 24 20:04:10 1999
++++ mcrypt-2.2.2.new/doc/mcrypt.texi	Thu Aug  5 00:06:37 1999
+@@ -10,6 +10,7 @@
+ @set VERSION 2.2.0
+ @set UPDATED 8 May 1999
+ 
++
+ @ifinfo
+ This file documents the the mcrypt command for encrypting/decrypting
+ files.
+@@ -63,6 +64,15 @@
+ except that this permission notice may be stated in a translation approved
+ by the Foundation.
+ @end titlepage
++
++@ifinfo
++@format
++@dircategory File utilities:
++@direntry
++* mcrypt: (mcrypt)			encrypt or decrypt files
++@end direntry
++@end format
++@end ifinfo
+ 
+ @node Top, , , (dir)
+ 
