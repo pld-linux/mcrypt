@@ -2,7 +2,7 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.2.2
-Release:	2
+Release:	3
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 Copyright:	GPL/LGPL
 Group:		Development/Libraries
@@ -57,7 +57,7 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/mcrypt.info \
 %post
 /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
-%preun
+%postun
 /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %clean
