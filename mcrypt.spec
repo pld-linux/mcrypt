@@ -2,7 +2,7 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.2.2
-Release:	1
+Release:	2
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 Copyright:	GPL/LGPL
 Group:		Development/Libraries
