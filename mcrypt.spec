@@ -1,7 +1,7 @@
 Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
-Version:	2.5.6
+Version:	2.5.7
 Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
@@ -16,7 +16,7 @@ URL:		http://mcrypt.hellug.gr/mcrypt/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	libmcrypt-devel >= 2.4.0
+BuildRequires:	libmcrypt-devel >= 2.4.15
 BuildRequires:	libtool
 BuildRequires:	mhash-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
