@@ -1,7 +1,7 @@
 Summary:	Mcrypt - simple crypting program
 Summary(pl):	Mcrypt - prosty program szyfruj±cy
 Name:		mcrypt
-Version:	2.6.3
+Version:	2.6.4
 Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
@@ -9,8 +9,7 @@ Group:		Development/Libraries
 Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
-Patch2:		%{name}-ac_fix.patch
-Patch3:		%{name}-pl.po-update.patch
+Patch2:		%{name}-pl.po-update.patch
 URL:		http://mcrypt.hellug.gr/mcrypt/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -44,7 +43,6 @@ kompatybilno¶æ z crypt(1).
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
 
 %build
 rm -f doc/mcrypt.info missing

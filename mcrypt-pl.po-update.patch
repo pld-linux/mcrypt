@@ -1,6 +1,6 @@
---- mcrypt-2.6.3/po/pl.po.orig	Fri Oct  4 10:56:51 2002
-+++ mcrypt-2.6.3/po/pl.po	Sat Jan  4 16:33:32 2003
-@@ -1,12 +1,13 @@
+--- mcrypt-2.6.4/po/pl.po.orig	2003-02-21 18:48:19.000000000 +0100
++++ mcrypt-2.6.4/po/pl.po	2003-05-10 19:42:04.000000000 +0200
+@@ -1,14 +1,15 @@
 -# mcrypt 2.2 
 +# Polish translations for mcrypt
  # Copyright (C) 1999 Free Software Foundation, Inc.
@@ -10,15 +10,17 @@
  msgid ""
  msgstr ""
 -"Project-Id-Version: mcrypt 2.2.0\n"
--"POT-Creation-Date: 2002-10-02 23:12+0300\n"
++"Project-Id-Version: mcrypt 2.6.4\n"
+ "POT-Creation-Date: 2003-02-21 19:48+0200\n"
 -"PO-Revision-Date: 1999-06-28 21:12+02:00\n"
-+"Project-Id-Version: mcrypt 2.6.3\n"
-+"POT-Creation-Date: 2003-01-04 15:34+0100\n"
-+"PO-Revision-Date: 2003-01-04 16:25+02:00\n"
++"PO-Revision-Date: 2003-05-10 19:25+0200\n"
  "Last-Translator: Janusz A. Urbanowicz <alex@bofh.net.pl>\n"
- "Language-Team: Polish <pl@li.org>\n"
+-"Language-Team: Polish <pl@li.org>\n"
++"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
-@@ -33,23 +34,27 @@
+ "Content-Type: text/plain; charset=ISO-8859-2\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -33,28 +34,26 @@
  #: src/extra.c:191 src/extra.c:196 src/extra.c:201 src/extra.c:206
  #: src/extra.c:211 src/extra.c:216
  msgid "Unsupported version of encrypted file\n"
@@ -31,24 +33,32 @@
 +msgstr "Nie u¿yto wektora inicjalizuj±cego.\n"
  
  #: src/extra.c:262
- msgid ""
- "This is a file encrypted with the 2.2 version of mcrypt. Unfortunately "
- "you'll need that version to decrypt it.\n"
+-msgid ""
+-"This is a file encrypted with the 2.2 version of mcrypt. Unfortunately "
+-"you'll need that version to decrypt it.\n"
++msgid "This is a file encrypted with the 2.2 version of mcrypt. Unfortunately you'll need that version to decrypt it.\n"
  msgstr ""
-+"To jest plik zaszyfrowany mcryptem w wersji 2.2. Niestety potrzeba tamtej "
++"To jest plik zaszyfrowany mcryptem w wersji 2.2. Niestety potrzeba tamtej\n"
 +"wersji, aby go odszyfrowaæ.\n"
  
  #: src/extra.c:267
- msgid ""
- "This is a file encrypted with the 2.1 version of mcrypt. Unfortunately "
- "you'll need that version to decrypt it.\n"
+-msgid ""
+-"This is a file encrypted with the 2.1 version of mcrypt. Unfortunately "
+-"you'll need that version to decrypt it.\n"
++msgid "This is a file encrypted with the 2.1 version of mcrypt. Unfortunately you'll need that version to decrypt it.\n"
  msgstr ""
-+"To jest plik zaszyfrowany mcryptem w wersji 2.1. Niestety potrzeba tamtej "
++"To jest plik zaszyfrowany mcryptem w wersji 2.1. Niestety potrzeba tamtej\n"
 +"wersji, aby go odszyfrowaæ.\n"
  
  #: src/extra.c:271
- msgid ""
-@@ -84,16 +89,15 @@
+-msgid ""
+-"Unable to get algorithm information. Use the --bare flag and specify the "
+-"algorithm manualy.\n"
++msgid "Unable to get algorithm information. Use the --bare flag and specify the algorithm manualy.\n"
+ msgstr ""
+ "Uzyskanie informacji o algorytmie niemo¿liwe. U¿yj argumentu --bare i podaj\n"
+ "algorytm rêcznie.\n"
+@@ -84,16 +83,15 @@
  
  #: src/extra.c:617
  msgid "Could not push character back to stream\n"
@@ -68,7 +78,7 @@
  
  #: src/extra.c:653
  #, c-format
-@@ -103,49 +107,53 @@
+@@ -103,49 +101,53 @@
  "Mode: %s\n"
  "Keyword mode: %s\n"
  msgstr ""
@@ -134,7 +144,7 @@
  
  #: src/extra.c:750
  #, c-format
-@@ -153,6 +161,8 @@
+@@ -153,6 +155,8 @@
  "Processed %.3f MB, at a %.3f MB/sec rate (1 MB == 1000000 Bytes).\n"
  "\n"
  msgstr ""
@@ -143,7 +153,7 @@
  
  #: src/extra.c:757
  #, c-format
-@@ -160,6 +170,8 @@
+@@ -160,6 +164,8 @@
  "Processed %.3f KB, at a %.3f KB/sec rate (1 KB == 1000 Bytes).\n"
  "\n"
  msgstr ""
@@ -152,7 +162,7 @@
  
  #: src/mcrypt.c:81
  msgid ""
-@@ -167,9 +179,11 @@
+@@ -167,9 +173,11 @@
  "Report bugs to mcrypt-dev@lists.hellug.gr.\n"
  "\n"
  msgstr ""
@@ -165,7 +175,7 @@
  msgid ""
  "\n"
  "Copyright (C) 1998-2002 Nikos Mavroyanopoulos\n"
-@@ -189,98 +203,92 @@
+@@ -189,98 +197,88 @@
  "\n"
  msgstr ""
  "\n"
@@ -177,9 +187,10 @@
  "wy¿szej.\n"
  "\n"
  "Program ten jest rozprowadzany w nadziei, ¿e bêdzie przydatny, ale BEZ\n"
- "¯ADNEJ GWARANCJI, nawet bez domy¶lnej gwarancji SPRZEDAWALNO¦CI lub\n"
+-"¯ADNEJ GWARANCJI, nawet bez domy¶lnej gwarancji SPRZEDAWALNO¦CI lub\n"
 -"PRZYDATNO¦CI DO KONKRETNYCH ZASTOSOWAÑ. Szczegó³y znajdziesz w\n"
 -"Powszechnej Licencji Publicznej GNU.\n"
++"¯ADNEJ GWARANCJI, nawet bez domy¶lnej gwarancji JAKO¦CI lub\n"
 +"PRZYDATNO¦CI DO KONKRETNYCH ZASTOSOWAÑ. Szczegó³y znajduj± siê\n"
 +"w Powszechnej Licencji Publicznej GNU.\n"
  "\n"
@@ -235,12 +246,13 @@
  
  #: src/mcrypt.c:237
 -#, fuzzy
- msgid ""
- "Error in the configuration file. Use the --help parameter for more info.\n"
- msgstr ""
+-msgid ""
+-"Error in the configuration file. Use the --help parameter for more info.\n"
+-msgstr ""
 -"Nale¿y przekierowaæ wej¶cie.\n"
 -"Parametr --help poda wiêcej informacji.\n"
-+"B³±d w pliku konfiguracyjnym. Parametr --help poda wiêcej informacji.\n"
++msgid "Error in the configuration file. Use the --help parameter for more info.\n"
++msgstr "B³±d w pliku konfiguracyjnym. Parametr --help poda wiêcej informacji.\n"
  
  #: src/mcrypt.c:338
  #, c-format
@@ -279,17 +291,18 @@
  
  #: src/mcrypt.c:435
 -#, fuzzy
- msgid ""
- "Warning: This system does not have a random device. Will use the included "
- "entropy gatherer.\n"
+-msgid ""
+-"Warning: This system does not have a random device. Will use the included "
+-"entropy gatherer.\n"
 -msgstr "Ostrze¿enie: Ten system nie udostêpnia ¼ród³a prawdziwej losowo¶ci.\n"
++msgid "Warning: This system does not have a random device. Will use the included entropy gatherer.\n"
 +msgstr ""
-+"Ostrze¿enie: Ten system nie udostêpnia ¼ród³a prawdziwej losowo¶ci. "
-+"Zostanie u¿yta za³±czona procedura gromadzenia entropii.\n"
++"Ostrze¿enie: Ten system nie udostêpnia ¼ród³a prawdziwej losowo¶ci. Zostanie\n"
++"u¿yta za³±czona procedura gromadzenia entropii.\n"
  
  #: src/mcrypt.c:486
  #, c-format
-@@ -314,17 +322,16 @@
+@@ -314,17 +312,16 @@
  "Parametr --help poda wiêcej informacji.\n"
  
  #: src/mcrypt.c:548
@@ -310,7 +323,7 @@
  msgid "Stdin was decrypted.\n"
  msgstr "Strumieñ wej¶ciowy rozszyfrowany.\n"
  
-@@ -338,12 +345,11 @@
+@@ -338,12 +335,11 @@
  msgstr "Strumieñ wej¶ciowy NIE zosta³ poprawnie rozszyfrowany.\n"
  
  #: src/mcrypt.c:638
@@ -324,18 +337,13 @@
  msgid "Stdin was encrypted.\n"
  msgstr "Strumieñ wej¶ciowy zaszyfrowany.\n"
  
-@@ -356,16 +362,13 @@
- msgid "Stdin was NOT encrypted successfully.\n"
- msgstr "Strumieñ wej¶ciowy NIE zosta³ poprawnie zaszyfrowany.\n"
+@@ -358,11 +354,11 @@
  
--#. append .dc
  #: src/mcrypt.c:731
  msgid "Unknown suffix. Will append '.dc'.\n"
 -msgstr ""
 +msgstr "Nieznana koñcówka. Zostanie do³±czona '.dc'.\n"
  
--#. unexpected error in libmhash
--#.
  #: src/keys.c:134
  msgid "Key transformation failed.\n"
 -msgstr ""
@@ -343,15 +351,16 @@
  
  #: src/xmalloc.c:38 src/xmalloc.c:56 src/xmalloc.c:73 src/xmalloc.c:92
  #: src/xmalloc.c:108 src/xmalloc.c:125 src/xmalloc.c:147
-@@ -373,574 +376,364 @@
+@@ -370,559 +366,338 @@
  msgstr "Nie mo¿na uzyskaæ przydzia³u pamiêci.\n"
  
  #: mcrypt.gaa:120
 -#, fuzzy
  msgid ""
  "Mcrypt encrypts and decrypts files with symmetric encryption algorithms.\n"
- "Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o "
- "keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
+-"Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o "
+-"keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
++"Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
  "\n"
  msgstr ""
 -"Sk³adnia: mcrypt [-dLFus87bhvrx] [-f plik kluczy] [-k klucz1 klucz2 ...]\n"
@@ -394,11 +403,12 @@
 +msgstr "TRYB KLUCZA "
  
  #: mcrypt.gaa:125
- msgid ""
- "Specify the keyword mode. Use the --list-keymodes parameter to view all "
- "modes."
- msgstr ""
-+"Tryb przetwarzania klucza. Parametr --list-keycodes poda wszystkie tryby."
+-msgid ""
+-"Specify the keyword mode. Use the --list-keymodes parameter to view all "
+-"modes."
+-msgstr ""
++msgid "Specify the keyword mode. Use the --list-keymodes parameter to view all modes."
++msgstr "Tryb przetwarzania klucza. Parametr --list-keycodes poda wszystkie tryby."
  
  #: mcrypt.gaa:126 mcrypt.gaa:127
  msgid "FILE "
@@ -422,11 +432,12 @@
 +msgstr "ALGORYTM "
  
  #: mcrypt.gaa:128
- msgid ""
- "Specify the encryption and decryption algorithm. Use the --list parameter to "
- "see the supported algorithms."
- msgstr ""
-+"Podanie algorytmu szyfrowania. Parametr --list wypisze obs³ugiwane algorytmy."
+-msgid ""
+-"Specify the encryption and decryption algorithm. Use the --list parameter to "
+-"see the supported algorithms."
+-msgstr ""
++msgid "Specify the encryption and decryption algorithm. Use the --list parameter to see the supported algorithms."
++msgstr "Podanie algorytmu szyfrowania. Parametr --list wypisze obs³ugiwane algorytmy."
  
  #: mcrypt.gaa:129 mcrypt.gaa:131
  msgid "DIRECTORY "
@@ -444,11 +455,12 @@
 +msgstr "TRYB "
  
  #: mcrypt.gaa:130
- msgid ""
- "Specify the encryption and decryption mode. Use the --list parameter to see "
- "the supported modes."
- msgstr ""
-+"Podanie trybu szyfrowania. Parametr --list wypisze obs³ugiwane tryby."
+-msgid ""
+-"Specify the encryption and decryption mode. Use the --list parameter to see "
+-"the supported modes."
+-msgstr ""
++msgid "Specify the encryption and decryption mode. Use the --list parameter to see the supported modes."
++msgstr "Podanie trybu szyfrowania. Parametr --list wypisze obs³ugiwane tryby."
  
  #: mcrypt.gaa:131
  msgid "Set the modes directory."
@@ -461,12 +473,12 @@
 +msgstr "SKRÓT "
  
  #: mcrypt.gaa:132
- msgid ""
- "Specify the hash algorithm to be used. Use the --list-hash parameter to view "
- "the hash algorithms."
- msgstr ""
-+"Podanie algorytmu skrótu, jaki ma byæ u¿yty. Parametr --list-hash wypisze "
-+"dostêpne algorytmy skrótu."
+-msgid ""
+-"Specify the hash algorithm to be used. Use the --list-hash parameter to view "
+-"the hash algorithms."
+-msgstr ""
++msgid "Specify the hash algorithm to be used. Use the --list-hash parameter to view the hash algorithms."
++msgstr "Podanie algorytmu skrótu, jaki ma byæ u¿yty. Parametr --list-hash wypisze dostêpne algorytmy skrótu."
  
  #: mcrypt.gaa:133
  msgid "KEY1 KEY2...KEYN "
@@ -652,7 +664,6 @@
 -msgstr ""
 +msgstr "Nie mo¿na sprawdziæ sygnatur!\n"
  
--#. for example: cat foo"bar
  #: src/popen.c:65 src/popen.c:75
  msgid "command string is not correct!\n"
 -msgstr ""
@@ -663,7 +674,6 @@
 -msgstr ""
 +msgstr "nie mo¿na utworzyæ potoku\n"
  
--#. error
  #: src/popen.c:96
  msgid "could not fork child process\n"
 -msgstr ""
@@ -719,8 +729,7 @@
 -msgstr ""
 +msgstr "B³±d podczas odczytu danych losowych\n"
  
--#: src/classic.c:119 src/classic.c:530 src/random.c:155
-+#: src/random.c:155 src/classic.c:119 src/classic.c:530
+ #: src/random.c:155 src/classic.c:119 src/classic.c:534
  msgid "Mcrypt failed to open module.\n"
 -msgstr ""
 +msgstr "Mcrypt nie móg³ otworzyæ modu³u.\n"
@@ -730,74 +739,58 @@
 -msgstr ""
 +msgstr "Mcrypt nie móg³ zainicjowaæ szyfru.\n"
  
--#. oops, can't happen
  #: src/rndunix.c:826
  msgid "Child had pid 0!"
 -msgstr ""
 +msgstr "Potomek mia³ pid 0!"
  
- #: src/rndwin32.c:42
- msgid "Error calling CryptAcquireContext()"
--msgstr ""
-+msgstr "B³±d wywo³ania CryptAcquireContext()"
- 
- #: src/rndwin32.c:49
- msgid "Error calling CryptReleaseContext()"
--msgstr ""
-+msgstr "B³±d wywo³ania CryptReleaseContext()"
- 
- #: src/rndwin32.c:57
- msgid "Error calling CryptGenRandom()"
--msgstr ""
-+msgstr "B³±d wywo³ania CryptGenRandom()"
- 
- #: src/classic.c:224
+ #: src/classic.c:228
 -#, fuzzy, c-format
 +#, c-format
  msgid "Error in keymode '%s'.\n"
 -msgstr "B³±d w argumentach.\n"
 +msgstr "B³±d w trybie przetwarzania klucza '%s'.\n"
  
- #: src/classic.c:281 src/classic.c:586
+ #: src/classic.c:285 src/classic.c:590
  msgid "mhash initialization failed.\n"
 -msgstr ""
 +msgstr "Inicjalizacja mhash nie powiod³a siê.\n"
  
- #: src/classic.c:358
+ #: src/classic.c:362
  msgid "Memory error\n"
 -msgstr ""
 +msgstr "B³±d pamiêci\n"
  
- #: src/classic.c:510
+ #: src/classic.c:514
  msgid "No valid file headers found.\n"
 -msgstr ""
 +msgstr "Nie znaleziono poprawnych nag³ówków pliku.\n"
  
- #: src/classic.c:641 src/classic.c:714
+ #: src/classic.c:645 src/classic.c:718
 -#, fuzzy
  msgid "Corrupted file.\n"
 -msgstr "Uszkodzony plik lub b³êdny klucz.\n"
 +msgstr "Uszkodzony plik.\n"
  
- #: src/classic.c:660
+ #: src/classic.c:664
  #, c-format
  msgid "Unexpected error [%d]\n"
 -msgstr ""
 +msgstr "Nieoczekiwany b³±d [%d]\n"
  
- #: src/classic.c:906 src/classic.c:915
+ #: src/classic.c:910 src/classic.c:919
 -#, fuzzy
  msgid "Decompressing the output file...\n"
  msgstr "Dekompresja pliku wyj¶ciowego...\n"
  
- #: src/classic.c:938
+ #: src/classic.c:942
 -#, fuzzy, c-format
 +#, c-format
  msgid "%s check failed\n"
 -msgstr "Test CRC32 nie powiód³ siê.\n"
 +msgstr "Test %s nie powiód³ siê\n"
  
- #: src/classic.c:1052
+ #: src/classic.c:1056
 -#, fuzzy
  msgid "Supported Hash Algorithms:\n"
 -msgstr "Brak algorytmu: %s\n"
