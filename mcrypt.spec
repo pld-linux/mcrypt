@@ -12,6 +12,7 @@ Group(pl):	Programowanie/Biblioteki
 Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
+Patch2:		%{name}-ac_fix.patch
 URL:		http://mcrypt.hellug.gr/mcrypt/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -42,9 +43,10 @@ kompatybilno¶æ z crypt(1).
 %setup  -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
-rm -f doc/mcrypt.info
+rm -f doc/mcrypt.info missing
 gettextize --copy --force
 aclocal
 autoconf
