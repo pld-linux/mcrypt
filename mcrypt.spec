@@ -1,10 +1,10 @@
+Summary:	Mini-crypt
 Name:		mcrypt
 Version:	2.1.18
 Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 Copyright:	GPL/LGPL
 Group:		Development/Libraries
-Summary:	Mini-crypt
 Source:		ftp://argeas.cs-net.gr/pub/unix/mcrypt/%{name}-%{version}.tar.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
 
@@ -29,25 +29,38 @@ make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%prefix/info
-make prefix=$RPM_BUILD_ROOT%prefix exec_prefix=$RPM_BUILD_ROOT%prefix install
-make prefix=$RPM_BUILD_ROOT%prefix exec_prefix=$RPM_BUILD_ROOT%prefix install.lib
-gzip $RPM_BUILD_ROOT%prefix/man/man1/mcrypt.1
-rm $RPM_BUILD_ROOT%prefix/man/man1/mdecrypt.1
-ln -s mcrypt.1.gz $RPM_BUILD_ROOT%prefix/man/man1/mdecrypt.1.gz
-gzip $RPM_BUILD_ROOT%prefix/info/mcrypt.info
-chmod 644 $RPM_BUILD_ROOT%prefix/info/mcrypt.info.gz
-chmod -R a+rX,go-w $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_infodir}
+
+make install bin=$RPM_BUILD_ROOT%{_bindir} \
+	mandir=$RPM_BUILD_ROOT%{_mandir} \
+	libdir=$RPM_BUILD_ROOT%{_libdir} \
+	infodir=$RPM_BUILD_ROOT%{_infodir} \
+	includedir=$RPM_BUILD_ROOT%{_includedir} \
+	datadir=$RPM_BUILD_ROOT%{_datadir}
+
+make install.lib bin=$RPM_BUILD_ROOT%{_bindir} \
+	mandir=$RPM_BUILD_ROOT%{_mandir} \
+	libdir=$RPM_BUILD_ROOT%{_libdir} \
+	infodir=$RPM_BUILD_ROOT%{_infodir} \
+	includedir=$RPM_BUILD_ROOT%{_includedir} \
+	datadir=$RPM_BUILD_ROOT%{_datadir}
+
+rm -f $RPM_BUILD_ROOT%{_mandir}/man1/mdecrypt.1
+echo ".so mcrypt.1" > $RPM_BUILD_ROOT%{_mandir}/man1/mdecrypt.1
+
+gzip -9nf $RPM_BUILD_ROOT%{_infodir}/mcrypt.info \
+	$RPM_BUILD_ROOT%{_mandir}/man1/* \
+	CHANGES LSM doc/{FORMAT,README*,THANKS,magic}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES COPYING LSM
-%doc doc/FORMAT doc/README* doc/THANKS doc/sample.mcryptrc doc/magic
-%{_bindir}/mcrypt
-%{_include}/mcrypt.h
+%doc {CHANGES,LSM,doc/{FORMAT,README*,THANKS,magic}}.gz
+%doc doc/sample.mcryptrc
+%attr(755,root,root) %{_bindir}/mcrypt
+%{_includedir}/mcrypt.h
 %{_infodir}/mcrypt.info*
 %{_libdir}/libmcrypt.a
-%prefix/man/man1/*
+%{_mandir}/man1/*
