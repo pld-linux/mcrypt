@@ -7,6 +7,7 @@ Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
 Group:		Development/Libraries
 Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
+# Source0-md5:	5a011846fd0f166428c8d97359aaa6b3
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
 Patch2:		%{name}-pl.po-update.patch
