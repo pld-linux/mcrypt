@@ -1,0 +1,19 @@
+diff -Nru mcrypt-2.2.5/doc/Makefile.am mcrypt-2.2.5.new/doc/Makefile.am
+--- mcrypt-2.2.5/doc/Makefile.am	Sat Oct 16 00:49:23 1999
++++ mcrypt-2.2.5.new/doc/Makefile.am	Sun Nov  7 00:06:26 1999
+@@ -1,9 +1,3 @@
+-man_MANS = mcrypt.1
++man_MANS = mcrypt.1 mdecrypt.1
+ EXTRA_DIST = mcrypt.1 gpl.texinfo FORMAT README-ufc-crypt README.nonfree THANKS magic sample.mcryptrc
+ info_TEXINFOS = mcrypt.texi
+-
+-install-exec-hook:
+-	-$(RM) -f $(man1dir)/mdecrypt.1
+-	$(LN_S) mcrypt.1 $(man1dir)/mdecrypt.1
+-uninstall-local:
+-	-$(RM) -f $(man1dir)/mdecrypt.1
+diff -Nru mcrypt-2.2.5/doc/mdecrypt.1 mcrypt-2.2.5.new/doc/mdecrypt.1
+--- mcrypt-2.2.5/doc/mdecrypt.1	Thu Jan  1 01:00:00 1970
++++ mcrypt-2.2.5.new/doc/mdecrypt.1	Sun Nov  7 00:06:50 1999
+@@ -0,0 +1 @@
++.so mcrypt.1
