@@ -3,7 +3,7 @@ Version:	2.1.18
 Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 Copyright:	GPL/LGPL
-Group:		Fazekas
+Group:		Development/Libraries
 Summary:	Mini-crypt
 Source:		ftp://argeas.cs-net.gr/pub/unix/mcrypt/%{name}-%{version}.tar.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
