@@ -1,7 +1,7 @@
-Summary:	Mini-crypt
-Summary(pl):	Mini-crypt
+Summary:	Mcrypt - simple crypting program
+Summary(pl):	Mcrypt - prosty program szyfruj±cy
 Name:		mcrypt
-Version:	2.5.12
+Version:	2.6.3
 Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
@@ -10,14 +10,16 @@ Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
 Patch2:		%{name}-ac_fix.patch
-Patch3:		%{name}-bind_textdomain_codeset.patch
+Patch3:		%{name}-pl.po-update.patch
 URL:		http://mcrypt.hellug.gr/mcrypt/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	libmcrypt-devel >= 2.4.16
+BuildRequires:	libmcrypt-devel >= 2.5.0
 BuildRequires:	libtool
-BuildRequires:	mhash-devel
+BuildRequires:	mhash-devel >= 0.8.15
+Requires:	libmcrypt >= 2.5.0
+Requires:	mhash >= 0.8.15
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,10 +33,10 @@ CBC, ECB, OFB and CFB modes of encryption are supported. A library
 which allows access to the above algorithms and modes is included.
 
 %description -l pl
-Zamiennik dla starej unixowej funkcji crypt(). Mcrypt u¿ywa
+Zamiennik dla starej uniksowej funkcji crypt(). Mcrypt u¿ywa
 nastêpuj±cych algorytmów: BLOWFISH, DES, TripleDES, 3-WAY, SAFER-SK64,
 SAFER-SK128, CAST-128, RC2 TEA (rozszerzona), TWOFISH, RC6, IDEA i
-GOST. Unixowy algorytm crypt tak¿e jest obs³ugiwany by zachowaæ
+GOST. Uniksowy algorytm crypt tak¿e jest obs³ugiwany, aby zachowaæ
 kompatybilno¶æ z crypt(1).
 
 %prep
@@ -57,7 +59,8 @@ rm -f doc/mcrypt.info missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR="$RPM_BUILD_ROOT" install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
@@ -66,6 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc LSM AUTHORS NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
+%doc AUTHORS ChangeLog NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
