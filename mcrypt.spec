@@ -11,7 +11,6 @@ Source:		http://hq.hellug.gr/~mcrypt/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		mcrypt-DESTDIR.patch
 Patch1:		mcrypt-info.patch
 Patch2:		mcrypt-man_fix.patch
-Prereq:		/usr/sbin/fix-info-dir
 BuildRequires:	libmcrypt-devel >= 2.3.0
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,10 +61,10 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/mcrypt.info \
 %find_lang %{name}
 
 %post
-/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %postun
-/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
