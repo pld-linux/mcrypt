@@ -2,15 +2,16 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.5.5
-Release:	1
+Release:	2
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Source0:	http://hq.hellug.gr/~mcrypt/mcrypt/%{name}-%{version}.tar.gz
-Patch0:		mcrypt-DESTDIR.patch
-Patch1:		mcrypt-man_fix.patch
+Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-man_fix.patch
 BuildRequires:	libmcrypt-devel >= 2.4.0
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,7 +42,6 @@ kompatybilno¶æ z crypt(1).
 rm -f doc/mcrypt.info
 gettextize --copy --force
 automake
-LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--without-included-gettext
 %{__make}
@@ -50,6 +50,7 @@ LDFLAGS="-s"; export LDFLAGS
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR="$RPM_BUILD_ROOT" install
+
 gzip -9nf {LSM,AUTHORS,NEWS,README,THANKS,TODO} doc/{FORMAT,magic,sample.mcryptrc}
 
 %find_lang %{name}
