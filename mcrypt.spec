@@ -47,7 +47,7 @@ kompatybilno¶æ z crypt(1).
 %build
 rm -f doc/mcrypt.info missing
 %{__gettextize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
