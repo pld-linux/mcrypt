@@ -2,7 +2,7 @@ Summary:	Mcrypt - simple crypting program
 Summary(pl):	Mcrypt - prosty program szyfruj±cy
 Name:		mcrypt
 Version:	2.6.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/mcrypt/%{name}-%{version}.tar.gz
@@ -44,11 +44,13 @@ kompatybilno¶æ z crypt(1).
 %patch1 -p1
 %patch2 -p1
 
+rm -f doc/mcrypt.info acinclude.m4
+
 %build
-rm -f doc/mcrypt.info missing
 %{__gettextize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--without-included-gettext
