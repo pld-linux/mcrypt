@@ -13,9 +13,12 @@ Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
 URL:		http://mcrypt.hellug.gr/mcrypt/
-BuildRequires:	libmcrypt-devel >= 2.4.0
-BuildRequires:	mhash-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	libmcrypt-devel >= 2.4.0
+BuildRequires:	libtool
+BuildRequires:	mhash-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,6 +46,8 @@ kompatybilno¶æ z crypt(1).
 %build
 rm -f doc/mcrypt.info
 gettextize --copy --force
+aclocal
+autoconf
 automake -a -c
 %configure \
 	--without-included-gettext
@@ -53,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR="$RPM_BUILD_ROOT" install
 
-gzip -9nf {LSM,AUTHORS,NEWS,README,THANKS,TODO} doc/{FORMAT,magic,sample.mcryptrc}
+gzip -9nf LSM AUTHORS NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
 
 %find_lang %{name}
 
@@ -62,6 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc {{LSM,AUTHORS,NEWS,README,THANKS,TODO},doc/{FORMAT,magic,sample.mcryptrc}}.gz
+%doc *.gz ,doc/*.gz
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
