@@ -2,7 +2,7 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.5.10
-Release:	1
+Release:	2
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
 Group:		Development/Libraries
@@ -69,6 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz ,doc/*.gz
+%doc *.gz doc/*.gz
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
