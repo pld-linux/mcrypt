@@ -2,7 +2,7 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.2.6
-Release:	2
+Release:	3
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
 Group:		Development/Libraries
@@ -12,7 +12,7 @@ Patch0:		mcrypt-DESTDIR.patch
 Patch1:		mcrypt-info.patch
 Patch2:		mcrypt-man_fix.patch
 Prereq:		/usr/sbin/fix-info-dir
-BuildRequires:	libmcrypt-devel
+BuildRequires:	libmcrypt-devel >= 2.3.0
 BuildRequires:	gettext-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
