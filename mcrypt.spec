@@ -10,6 +10,7 @@ Group(pl):	Programowanie/Biblioteki
 Source:		ftp://argeas.cs-net.gr/pub/unix/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		mcrypt-external.patch
 Patch1:		mcrypt-info.patch
+Prereq:		/sbin/install-info
 BuildRequires:	libmcrypt-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
