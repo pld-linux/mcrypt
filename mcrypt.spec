@@ -1,8 +1,8 @@
 Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
-Version:	2.2.2
-Release:	3
+Version:	2.2.5
+Release:	1
 Vendor:		Fazekas Mihály Gimnázium, Budapest
 Copyright:	GPL/LGPL
 Group:		Development/Libraries
@@ -10,8 +10,10 @@ Group(pl):	Programowanie/Biblioteki
 Source:		ftp://argeas.cs-net.gr/pub/unix/mcrypt/%{name}-%{version}.tar.gz
 Patch0:		mcrypt-external.patch
 Patch1:		mcrypt-info.patch
+Patch2:		mcrypt-man_fix.patch
 Prereq:		/usr/sbin/fix-info-dir
 BuildRequires:	libmcrypt-devel
+BuildRequires:	gettext-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -34,9 +36,11 @@ jest obs³ugiwany by zachowaæ kompatybilno¶æ z crypt(1).
 %setup  -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f doc/mcrypt.info
+gettextize --copy --force
 automake
 %configure \
 	--without-included-gettext
@@ -54,6 +58,8 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/mcrypt.info \
 	$RPM_BUILD_ROOT%{_mandir}/man1/* \
 	LSM doc/{FORMAT,README*,THANKS,magic}
 
+%find_lang %{name}
+
 %post
 /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
@@ -63,7 +69,7 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/mcrypt.info \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc {LSM,doc/{FORMAT,README*,THANKS,magic}}.gz
 %doc doc/sample.mcryptrc
