@@ -2,9 +2,9 @@ Summary:	Mini-crypt
 Summary(pl):	Mini-crypt
 Name:		mcrypt
 Version:	2.2.6
-Release:	1
+Release:	2
 Vendor:		Fazekas Mihály Gimnázium, Budapest
-Copyright:	GPL/LGPL
+License:	GPL
 Group:		Development/Libraries
 Group(pl):	Programowanie/Biblioteki
 Source:		http://hq.hellug.gr/~mcrypt/mcrypt/%{name}-%{version}.tar.gz
@@ -42,6 +42,7 @@ jest obs³ugiwany by zachowaæ kompatybilno¶æ z crypt(1).
 rm -f doc/mcrypt.info
 gettextize --copy --force
 automake
+LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--without-included-gettext
 make
