@@ -1,0 +1,14 @@
+diff -Nru mcrypt-2.2.6/Makefile.am mcrypt-2.2.6.new/Makefile.am
+--- mcrypt-2.2.6/Makefile.am	Sat Oct 16 00:49:23 1999
++++ mcrypt-2.2.6.new/Makefile.am	Wed Jan  5 23:31:36 2000
+@@ -3,8 +3,8 @@
+ EXTRA_DIST = LSM INSTALL.generic
+ SUBDIRS = doc intl libufc libmcrypt src po tests
+ install-exec-hook:
+-	-$(RM) -f $(bindir)/mdecrypt
+-	$(LN_S) mcrypt $(bindir)/mdecrypt
++	$(LN_S) mcrypt $(DESTDIR)$(bindir)/mdecrypt
++
+ uninstall-local:
+ 	-$(RM) -f $(bindir)/mdecrypt
+  
