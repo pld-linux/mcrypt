@@ -51,5 +51,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_infodir}/mcrypt.info*
 %{_libdir}/libmcrypt.a
 %prefix/man/man1/*
-
-#%chngelog
