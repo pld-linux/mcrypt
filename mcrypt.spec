@@ -43,7 +43,7 @@ kompatybilno¶æ z crypt(1).
 %build
 rm -f doc/mcrypt.info
 gettextize --copy --force
-automake
+automake -a -c
 %configure \
 	--without-included-gettext
 %{__make}
