@@ -3,15 +3,14 @@ Summary(pl):	Mcrypt - prosty program szyfruj±cy
 Name:		mcrypt
 Version:	2.6.4
 Release:	1
-Vendor:		Fazekas Mihály Gimnázium, Budapest
 License:	GPL
-Group:		Development/Libraries
-Source0:	ftp://mcrypt.hellug.gr/pub/mcrypt/%{name}-%{version}.tar.gz
+Group:		Applications
+Source0:	http://dl.sourceforge.net/mcrypt/%{name}-%{version}.tar.gz
 # Source0-md5:	5a011846fd0f166428c8d97359aaa6b3
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-man_fix.patch
 Patch2:		%{name}-pl.po-update.patch
-URL:		http://mcrypt.hellug.gr/mcrypt/
+URL:		http://mcrypt.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -40,7 +39,7 @@ GOST. Uniksowy algorytm crypt tak¿e jest obs³ugiwany, aby zachowaæ
 kompatybilno¶æ z crypt(1).
 
 %prep
-%setup  -q
+%setup -q
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
