@@ -8,9 +8,9 @@ Copyright:	GPL/LGPL
 Group:		Development/Libraries
 Group(pl):	Programowanie/Biblioteki
 Source:		ftp://argeas.cs-net.gr/pub/unix/mcrypt/%{name}-%{version}.tar.gz
-Patch:		mcrypt-external.patch
+Patch0:		mcrypt-external.patch
+Patch1:		mcrypt-info.patch
 BuildRequires:	libmcrypt-devel
-Requires:	libmcrypt
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -30,13 +30,15 @@ RC2 TEA (rozszerzona), TWOFISH, RC6, IDEA i GOST. Unixowy algorytm crypt tak¿e
 jest obs³ugiwany by zachowaæ kompatybilno¶æ z crypt(1).
 
 %prep
-%setup -q
-%patch -p1
+%setup  -q
+%patch0 -p1
+%patch1 -p1
 
 %build
 rm -f doc/mcrypt.info
 automake
-%configure --without-included-gettext
+%configure \
+	--without-included-gettext
 make
 
 %install
@@ -68,5 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc {LSM,doc/{FORMAT,README*,THANKS,magic}}.gz
 %doc doc/sample.mcryptrc
 %attr(755,root,root) %{_bindir}/*
-%attr(644,root,root) %{_infodir}/mcrypt.info*
-%attr(644,root,root) %{_mandir}/man1/*
+%{_infodir}/mcrypt.info*
+%{_mandir}/man1/*
