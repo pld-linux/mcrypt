@@ -14,7 +14,7 @@ Patch2:		mcrypt-man_fix.patch
 Prereq:		/usr/sbin/fix-info-dir
 BuildRequires:	libmcrypt-devel >= 2.3.0
 BuildRequires:	gettext-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A replacement for the old unix crypt(1) command. Mcrypt uses the following
