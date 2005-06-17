@@ -48,6 +48,7 @@ rm -f doc/mcrypt.info acinclude.m4
 
 %build
 %{__gettextize}
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
