@@ -1,5 +1,5 @@
 Summary:	Mcrypt - simple crypting program
-Summary(pl):	Mcrypt - prosty program szyfruj±cy
+Summary(pl.UTF-8):   Mcrypt - prosty program szyfrujÄ…cy
 Name:		mcrypt
 Version:	2.6.4
 Release:	2
@@ -31,12 +31,12 @@ allow compability with the crypt(1) command.
 CBC, ECB, OFB and CFB modes of encryption are supported. A library
 which allows access to the above algorithms and modes is included.
 
-%description -l pl
-Zamiennik dla starej uniksowej funkcji crypt(). Mcrypt u¿ywa
-nastêpuj±cych algorytmów: BLOWFISH, DES, TripleDES, 3-WAY, SAFER-SK64,
+%description -l pl.UTF-8
+Zamiennik dla starej uniksowej funkcji crypt(). Mcrypt uÅ¼ywa
+nastÄ™pujÄ…cych algorytmÃ³w: BLOWFISH, DES, TripleDES, 3-WAY, SAFER-SK64,
 SAFER-SK128, CAST-128, RC2 TEA (rozszerzona), TWOFISH, RC6, IDEA i
-GOST. Uniksowy algorytm crypt tak¿e jest obs³ugiwany, aby zachowaæ
-kompatybilno¶æ z crypt(1).
+GOST. Uniksowy algorytm crypt takÅ¼e jest obsÅ‚ugiwany, aby zachowaÄ‡
+kompatybilnoÅ›Ä‡ z crypt(1).
 
 %prep
 %setup -q
