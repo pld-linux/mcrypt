@@ -1,6 +1,7 @@
---- mcrypt-2.6.4/po/pl.po.orig	2003-02-21 18:48:19.000000000 +0100
-+++ mcrypt-2.6.4/po/pl.po	2003-05-10 19:42:04.000000000 +0200
-@@ -1,14 +1,15 @@
+diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
+--- mcrypt-2.6.7/po/pl.po	2007-11-07 18:15:11.000000000 +0100
++++ mcrypt-2.6.7-new/po/pl.po	2008-09-30 14:29:06.475156866 +0200
+@@ -1,15 +1,16 @@
 -# mcrypt 2.2 
 +# Polish translations for mcrypt
  # Copyright (C) 1999 Free Software Foundation, Inc.
@@ -11,7 +12,8 @@
  msgstr ""
 -"Project-Id-Version: mcrypt 2.2.0\n"
 +"Project-Id-Version: mcrypt 2.6.4\n"
- "POT-Creation-Date: 2003-02-21 19:48+0200\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2007-11-07 19:15+0200\n"
 -"PO-Revision-Date: 1999-06-28 21:12+02:00\n"
 +"PO-Revision-Date: 2003-05-10 19:25+0200\n"
  "Last-Translator: Janusz A. Urbanowicz <alex@bofh.net.pl>\n"
@@ -20,19 +22,19 @@
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=ISO-8859-2\n"
  "Content-Transfer-Encoding: 8bit\n"
-@@ -33,28 +34,26 @@
- #: src/extra.c:191 src/extra.c:196 src/extra.c:201 src/extra.c:206
- #: src/extra.c:211 src/extra.c:216
+@@ -37,27 +38,27 @@ msgstr "Proszê u¿yæ kombinacji cyfr i ma
+ #: src/extra.c:190 src/extra.c:195 src/extra.c:200 src/extra.c:205
+ #: src/extra.c:210 src/extra.c:215
  msgid "Unsupported version of encrypted file\n"
 -msgstr ""
 +msgstr "Nie obs³ugiwana wersja zaszyfrowanego pliku\n"
  
- #: src/extra.c:222
+ #: src/extra.c:221
  msgid "No Initialization vector was used.\n"
 -msgstr ""
 +msgstr "Nie u¿yto wektora inicjalizuj±cego.\n"
  
- #: src/extra.c:262
+ #: src/extra.c:261
 -msgid ""
 -"This is a file encrypted with the 2.2 version of mcrypt. Unfortunately "
 -"you'll need that version to decrypt it.\n"
@@ -41,44 +43,43 @@
 +"To jest plik zaszyfrowany mcryptem w wersji 2.2. Niestety potrzeba tamtej\n"
 +"wersji, aby go odszyfrowaæ.\n"
  
- #: src/extra.c:267
+ #: src/extra.c:266
 -msgid ""
 -"This is a file encrypted with the 2.1 version of mcrypt. Unfortunately "
--"you'll need that version to decrypt it.\n"
-+msgid "This is a file encrypted with the 2.1 version of mcrypt. Unfortunately you'll need that version to decrypt it.\n"
++msgid "This is a file encrypted with the 2.1 version of mcrypt. Unfortunately "
+ "you'll need that version to decrypt it.\n"
  msgstr ""
 +"To jest plik zaszyfrowany mcryptem w wersji 2.1. Niestety potrzeba tamtej\n"
 +"wersji, aby go odszyfrowaæ.\n"
  
- #: src/extra.c:271
+ #: src/extra.c:270
 -msgid ""
 -"Unable to get algorithm information. Use the --bare flag and specify the "
--"algorithm manualy.\n"
-+msgid "Unable to get algorithm information. Use the --bare flag and specify the algorithm manualy.\n"
++msgid "Unable to get algorithm information. Use the --bare flag and specify the "
+ "algorithm manualy.\n"
  msgstr ""
  "Uzyskanie informacji o algorytmie niemo¿liwe. U¿yj argumentu --bare i podaj\n"
- "algorytm rêcznie.\n"
-@@ -84,16 +83,15 @@
+@@ -89,16 +90,16 @@ msgstr "%s: %s ju¿ istnieje, czy chcesz 
  
- #: src/extra.c:617
+ #: src/extra.c:615
  msgid "Could not push character back to stream\n"
 -msgstr ""
 +msgstr "Nie mo¿na wepchn±æ znaku z powrotem do strumienia\n"
  
- #: src/extra.c:625
--#, fuzzy
+ #: src/extra.c:623
+ #, fuzzy
  msgid "Could not open file\n"
 -msgstr "Uszkodzony plik lub b³êdny klucz.\n"
 +msgstr "Nie mo¿na otworzyæ pliku\n"
  
- #: src/extra.c:638
+ #: src/extra.c:636
  msgid "An OpenPGP encrypted file has been detected.\n"
 -msgstr ""
 +msgstr "Wykryto plik zaszyfrowany OpenPGP.\n"
  
- #: src/extra.c:653
+ #: src/extra.c:651
  #, c-format
-@@ -103,49 +101,53 @@
+@@ -108,51 +109,55 @@ msgid ""
  "Mode: %s\n"
  "Keyword mode: %s\n"
  msgstr ""
@@ -87,82 +88,84 @@
 +"Tryb: %s\n"
 +"Tryb przetwarzania klucza: %s\n"
  
- #: src/extra.c:661
+ #: src/extra.c:659
 -#, fuzzy, c-format
 +#, c-format
  msgid "File format: %s\n"
 -msgstr "Algorytm: %s\n"
 +msgstr "Format pliku: %s\n"
  
- #: src/extra.c:666
+ #: src/extra.c:664
 -#, fuzzy, c-format
 +#, c-format
  msgid "Input File: %s\n"
 -msgstr "Plik: %s\n"
 +msgstr "Plik wej¶ciowy: %s\n"
  
- #: src/extra.c:669
+ #: src/extra.c:667
 -#, fuzzy, c-format
 +#, c-format
  msgid "Output File: %s\n"
 -msgstr "Plik: %s\n"
 +msgstr "Plik wyj¶ciowy: %s\n"
  
- #: src/extra.c:714
+ #: src/extra.c:712
+ #, c-format
  msgid "Time needed: "
 -msgstr ""
 +msgstr "Potrzebny czas: "
  
- #: src/extra.c:717
+ #: src/extra.c:715
  #, c-format
  msgid "%lu hours"
 -msgstr ""
 +msgstr "%lu godzin"
  
- #: src/extra.c:724
+ #: src/extra.c:722
  #, c-format
  msgid "%lu minutes"
 -msgstr ""
 +msgstr "%lu minut"
  
- #: src/extra.c:731
+ #: src/extra.c:729
  #, c-format
  msgid "%lu seconds"
 -msgstr ""
 +msgstr "%lu sekund"
  
- #: src/extra.c:738
+ #: src/extra.c:736
  #, c-format
  msgid "%lu milliseconds"
 -msgstr ""
 +msgstr "%lu milisekund"
  
- #: src/extra.c:743
+ #: src/extra.c:741
+ #, c-format
  msgid "Wow, no time counted!\n"
 -msgstr ""
 +msgstr "Uuu, nie policzono czasu!\n"
  
- #: src/extra.c:750
+ #: src/extra.c:748
  #, c-format
-@@ -153,6 +155,8 @@
+@@ -160,6 +165,8 @@ msgid ""
  "Processed %.3f MB, at a %.3f MB/sec rate (1 MB == 1000000 Bytes).\n"
  "\n"
  msgstr ""
 +"Przetworzono %.3f MB z szybko¶ci± %.3f MB/sec (1 MB = 1000000 bajtów).\n"
 +"\n"
  
- #: src/extra.c:757
+ #: src/extra.c:755
  #, c-format
-@@ -160,6 +164,8 @@
+@@ -167,6 +174,8 @@ msgid ""
  "Processed %.3f KB, at a %.3f KB/sec rate (1 KB == 1000 Bytes).\n"
  "\n"
  msgstr ""
 +"Przetworzono %.3f KB z szybko¶ci± %.3f KB/sec (1 KB = 1000 bajtów).\n"
 +"\n"
  
- #: src/mcrypt.c:81
- msgid ""
-@@ -167,9 +173,11 @@
+ #: src/mcrypt.c:80
+ #, c-format
+@@ -175,9 +184,12 @@ msgid ""
  "Report bugs to mcrypt-dev@lists.hellug.gr.\n"
  "\n"
  msgstr ""
@@ -170,18 +173,18 @@
 +"B³êdy prosimy zg³aszaæ na adres mcrypt-dev@lists.hellug.gr.\n"
 +"\n"
  
- #: src/mcrypt.c:91
--#, fuzzy
+ #: src/mcrypt.c:90
+-#, fuzzy, c-format
++#, c-format
  msgid ""
  "\n"
  "Copyright (C) 1998-2002 Nikos Mavroyanopoulos\n"
-@@ -189,98 +197,88 @@
+@@ -197,99 +209,90 @@ msgid ""
  "\n"
  msgstr ""
  "\n"
--"Ten program jest darmowy; mo¿esz rozprowadzaæ go i/lub modyfikowaæ\n"
 +"Copyright (C) 1998-2002 Nikos Mavroyanopoulos\n"
-+"Ten program jest darmowy; mo¿na rozprowadzaæ go i/lub modyfikowaæ\n"
+ "Ten program jest darmowy; mo¿esz rozprowadzaæ go i/lub modyfikowaæ\n"
  "zachowuj±c warunki Powszechnej Licencji Publicznej GNU (General Public\n"
  "Licence), opublikowanej przez Free Software Foundation, w wersji 2 lub\n"
  "wy¿szej.\n"
@@ -197,42 +200,42 @@
 -"Wraz z tym programem powiniene¶ otrzymaæ kopiê Powszechnej Licencji\n"
 -"Publicznej GNU. Je¶li nie otrzyma³e¶, napisz do Free Software Foundation,\n"
 +"Kopia Powszechnej Licencji Publicznej GNU powinna byæ dostarczona wraz\n"
-+"z tym programem. Je¶li nie, mo¿na napisaæ do Free Software Foundation,\n"
+++"z tym programem. Je¶li nie, mo¿na napisaæ do Free Software Foundation,\n"
  "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
  "\n"
  
- #: src/mcrypt.c:135
+ #: src/mcrypt.c:133
 -#, fuzzy, c-format
 +#, c-format
  msgid "Mcrypt v.%s (%s-%s-%s)\n"
 -msgstr "Mini-crypt v.%s (%s-%s-%s)\n"
 +msgstr "Mcrypt v.%s (%s-%s-%s)\n"
  
- #: src/mcrypt.c:137
+ #: src/mcrypt.c:135
  #, c-format
  msgid "Linked against libmcrypt v.%s\n"
 -msgstr ""
 +msgstr "Zlinkowano z libmcrypt v.%s\n"
  
- #: src/mcrypt.c:141
--#, fuzzy
+ #: src/mcrypt.c:139
+-#, fuzzy, c-format
++#, c-format
  msgid "Copyright (C) 1998-2002 Nikos Mavroyanopoulos (nmav@gnutls.org)\n"
--msgstr "Copyright (C) 1998,1999 Nikos Mavroyanopoulos <nmav@hellug.gr>.\n"
-+msgstr "Copyright (C) 1998,2002 Nikos Mavroyanopoulos (nmav@gnutls.org)\n"
+ msgstr "Copyright (C) 1998,1999 Nikos Mavroyanopoulos <nmav@hellug.gr>.\n"
  
- #: src/mcrypt.c:154
+ #: src/mcrypt.c:152
 -#, fuzzy
  msgid "The specified key size is too large for this algorithm.\n"
 -msgstr "Ostrze¿enie: klucz zbyt krótki dla wybranego algorytmu.\n"
 +msgstr "Podany rozmiar klucza jest zbyt du¿y dla tego algorytmu.\n"
  
- #: src/mcrypt.c:179
+ #: src/mcrypt.c:177
 -#, fuzzy
  msgid "The specified key size not valid for this algorithm.\n"
 -msgstr "Ostrze¿enie: klucz zbyt krótki dla wybranego algorytmu.\n"
 +msgstr "Podany rozmiar klucza nie jest poprawny dla tego algorytmu.\n"
  
- #: src/mcrypt.c:216 src/mcrypt.c:268
+ #: src/mcrypt.c:214 src/mcrypt.c:266
 -#, fuzzy
  msgid "Error in the arguments. Use the --help parameter for more info.\n"
 -msgstr ""
@@ -240,11 +243,11 @@
 -"Parametr --help poda wiêcej informacji.\n"
 +msgstr "B³±d w argumentach. Parametr --help poda wiêcej informacji.\n"
  
- #: src/mcrypt.c:221
+ #: src/mcrypt.c:219
  msgid "Warning: Cannot access config file.\n"
  msgstr "Ostrze¿enie: Dostêp do pliku konfiguracyjnego niemo¿liwy.\n"
  
- #: src/mcrypt.c:237
+ #: src/mcrypt.c:235
 -#, fuzzy
 -msgid ""
 -"Error in the configuration file. Use the --help parameter for more info.\n"
@@ -254,42 +257,43 @@
 +msgid "Error in the configuration file. Use the --help parameter for more info.\n"
 +msgstr "B³±d w pliku konfiguracyjnym. Parametr --help poda wiêcej informacji.\n"
  
- #: src/mcrypt.c:338
+ #: src/mcrypt.c:336
  #, c-format
  msgid "The '%s' hash algorithm was not found.\n"
 -msgstr ""
 +msgstr "Nie znaleziono algorytmu mieszaj±cego '%s'.\n"
  
- #: src/mcrypt.c:341
+ #: src/mcrypt.c:339
+ #, c-format
  msgid "Use the --hashlist parameter to view all supported hashes.\n"
 -msgstr ""
 +msgstr "Parametr --hashlist poda wszystkie obs³uguj±ce algorytmy mieszaj±ce.\n"
  
- #: src/mcrypt.c:380
+ #: src/mcrypt.c:379
  msgid "Illegal compression level\n"
 -msgstr ""
 +msgstr "B³êdny stopieñ kompresji\n"
  
- #: src/mcrypt.c:391
+ #: src/mcrypt.c:392
 -#, fuzzy, c-format
 +#, c-format
  msgid "Error in algorithm '%s'.\n"
 -msgstr "Brak algorytmu: %s\n"
 +msgstr "B³±d w algorytmie: '%s'.\n"
  
- #: src/mcrypt.c:400 src/mcrypt.c:412
+ #: src/mcrypt.c:401 src/mcrypt.c:413
 -#, fuzzy, c-format
 +#, c-format
  msgid "Error in mode '%s'.\n"
 -msgstr "B³±d w argumentach.\n"
 +msgstr "B³±d w trybie '%s'.\n"
  
- #: src/mcrypt.c:426
+ #: src/mcrypt.c:427
  msgid "Warning: It is insecure to specify keywords in the command line\n"
 -msgstr "Ostrze¿enie: Podawanue hase³ w linii poleceñ nie jest bezpieczne.\n"
-+msgstr "Ostrze¿enie: Podawanie hase³ w linii poleceñ nie jest bezpieczne\n"
++msgstr "Ostrze¿enie: Podawanue hase³ w linii poleceñ nie jest bezpieczne\n"
  
- #: src/mcrypt.c:435
+ #: src/mcrypt.c:436
 -#, fuzzy
 -msgid ""
 -"Warning: This system does not have a random device. Will use the included "
@@ -300,62 +304,65 @@
 +"Ostrze¿enie: Ten system nie udostêpnia ¼ród³a prawdziwej losowo¶ci. Zostanie\n"
 +"u¿yta za³±czona procedura gromadzenia entropii.\n"
  
- #: src/mcrypt.c:486
+ #: src/mcrypt.c:487
  #, c-format
-@@ -314,17 +312,16 @@
+@@ -323,17 +326,17 @@ msgstr ""
  "Parametr --help poda wiêcej informacji.\n"
  
- #: src/mcrypt.c:548
+ #: src/mcrypt.c:549
 -#, fuzzy, c-format
 +#, c-format
  msgid "%s: file %s has the .nc suffix... skipping...\n"
 -msgstr "%s: plik %s ma koñcówkê .enc ... pominiêty...\n"
 +msgstr "%s: plik %s ma koñcówkê .nc... pominiêty...\n"
  
- #: src/mcrypt.c:592
+ #: src/mcrypt.c:593
 -#, fuzzy, c-format
 +#, c-format
  msgid "File %s was decrypted.\n"
  msgstr "Plik %s rozszyfrowany.\n"
  
- #: src/mcrypt.c:595
--#, fuzzy
+ #: src/mcrypt.c:596
+-#, fuzzy, c-format
++#, c-format
  msgid "Stdin was decrypted.\n"
  msgstr "Strumieñ wej¶ciowy rozszyfrowany.\n"
  
-@@ -338,12 +335,11 @@
+@@ -347,12 +350,12 @@ msgid "Stdin was NOT decrypted successfu
  msgstr "Strumieñ wej¶ciowy NIE zosta³ poprawnie rozszyfrowany.\n"
  
- #: src/mcrypt.c:638
+ #: src/mcrypt.c:639
 -#, fuzzy, c-format
 +#, c-format
  msgid "File %s was encrypted.\n"
  msgstr "Plik %s zaszyfrowany.\n"
  
- #: src/mcrypt.c:641
--#, fuzzy
+ #: src/mcrypt.c:642
+-#, fuzzy, c-format
++#, c-format
  msgid "Stdin was encrypted.\n"
  msgstr "Strumieñ wej¶ciowy zaszyfrowany.\n"
  
-@@ -358,11 +354,11 @@
+@@ -367,11 +370,11 @@ msgstr "Strumieñ wej¶ciowy NIE zosta³ po
  
- #: src/mcrypt.c:731
+ #: src/mcrypt.c:732
  msgid "Unknown suffix. Will append '.dc'.\n"
 -msgstr ""
 +msgstr "Nieznana koñcówka. Zostanie do³±czona '.dc'.\n"
  
- #: src/keys.c:134
+ #: src/keys.c:133
  msgid "Key transformation failed.\n"
 -msgstr ""
 +msgstr "Przekszta³cenie klucza nie powiod³o siê.\n"
  
- #: src/xmalloc.c:38 src/xmalloc.c:56 src/xmalloc.c:73 src/xmalloc.c:92
- #: src/xmalloc.c:108 src/xmalloc.c:125 src/xmalloc.c:147
-@@ -370,559 +366,338 @@
+ #: src/xmalloc.c:37 src/xmalloc.c:55 src/xmalloc.c:72 src/xmalloc.c:91
+ #: src/xmalloc.c:107 src/xmalloc.c:124 src/xmalloc.c:146
+@@ -380,21 +383,21 @@ msgid "Cannot allocate memory\n"
  msgstr "Nie mo¿na uzyskaæ przydzia³u pamiêci.\n"
  
  #: mcrypt.gaa:120
--#, fuzzy
+-#, fuzzy, c-format
++#, c-format
  msgid ""
  "Mcrypt encrypts and decrypts files with symmetric encryption algorithms.\n"
 -"Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o "
@@ -377,32 +384,36 @@
 -msgstr ""
 +msgstr "U¿ycie pliku w formacie OpenPGP (RFC2440)."
  
- #: mcrypt.gaa:122 mcrypt.gaa:124
+ #: mcrypt.gaa:122
+ msgid "Use the native (mcrypt) file format."
+@@ -402,229 +405,217 @@ msgstr ""
+ 
+ #: mcrypt.gaa:123 mcrypt.gaa:125
  msgid "INTEGER "
 -msgstr ""
-+msgstr "LICZBA "
++msgstr "LICZBA"
  
- #: mcrypt.gaa:122
+ #: mcrypt.gaa:123
  msgid "Sets the compression level for openpgp packets (0 disables)."
 -msgstr ""
 +msgstr "Ustawienie stopnia kompresji dla pakietów openpgp (0 wy³±cza)."
  
- #: mcrypt.gaa:123
+ #: mcrypt.gaa:124
  msgid "decrypts."
 -msgstr ""
 +msgstr "rozszyfrowanie"
  
- #: mcrypt.gaa:124
+ #: mcrypt.gaa:125
  msgid "Set the algorithm's key size (in bytes)."
 -msgstr ""
 +msgstr "Ustawienie rozmiaru klucza dla algorytmu (w bajtach)."
  
- #: mcrypt.gaa:125
+ #: mcrypt.gaa:126
  msgid "KEYMODE "
 -msgstr ""
 +msgstr "TRYB KLUCZA "
  
- #: mcrypt.gaa:125
+ #: mcrypt.gaa:126
 -msgid ""
 -"Specify the keyword mode. Use the --list-keymodes parameter to view all "
 -"modes."
@@ -410,28 +421,28 @@
 +msgid "Specify the keyword mode. Use the --list-keymodes parameter to view all modes."
 +msgstr "Tryb przetwarzania klucza. Parametr --list-keycodes poda wszystkie tryby."
  
- #: mcrypt.gaa:126 mcrypt.gaa:127
+ #: mcrypt.gaa:127 mcrypt.gaa:128
  msgid "FILE "
 -msgstr ""
 +msgstr "PLIK "
  
- #: mcrypt.gaa:126
+ #: mcrypt.gaa:127
  msgid "Specify the file to read the keyword from."
 -msgstr ""
 +msgstr "Podanie pliku, z którego ma byæ czytany klucz."
  
- #: mcrypt.gaa:127
+ #: mcrypt.gaa:128
 -#, fuzzy
  msgid "Use configuration file FILE."
 -msgstr "B³±d w pliku konfiguracyjnym.\n"
 +msgstr "U¿ycie PLIKU jako pliku konfiguracyjnego."
  
- #: mcrypt.gaa:128
+ #: mcrypt.gaa:129
  msgid "ALGORITHM "
 -msgstr ""
 +msgstr "ALGORYTM "
  
- #: mcrypt.gaa:128
+ #: mcrypt.gaa:129
 -msgid ""
 -"Specify the encryption and decryption algorithm. Use the --list parameter to "
 -"see the supported algorithms."
@@ -439,22 +450,22 @@
 +msgid "Specify the encryption and decryption algorithm. Use the --list parameter to see the supported algorithms."
 +msgstr "Podanie algorytmu szyfrowania. Parametr --list wypisze obs³ugiwane algorytmy."
  
- #: mcrypt.gaa:129 mcrypt.gaa:131
+ #: mcrypt.gaa:130 mcrypt.gaa:132
  msgid "DIRECTORY "
 -msgstr ""
 +msgstr "KATALOG "
  
- #: mcrypt.gaa:129
+ #: mcrypt.gaa:130
  msgid "Set the algorithms directory."
 -msgstr ""
 +msgstr "Ustawienie katalogu algorytmów."
  
- #: mcrypt.gaa:130
+ #: mcrypt.gaa:131
  msgid "MODE "
 -msgstr ""
 +msgstr "TRYB "
  
- #: mcrypt.gaa:130
+ #: mcrypt.gaa:131
 -msgid ""
 -"Specify the encryption and decryption mode. Use the --list parameter to see "
 -"the supported modes."
@@ -462,17 +473,17 @@
 +msgid "Specify the encryption and decryption mode. Use the --list parameter to see the supported modes."
 +msgstr "Podanie trybu szyfrowania. Parametr --list wypisze obs³ugiwane tryby."
  
- #: mcrypt.gaa:131
+ #: mcrypt.gaa:132
  msgid "Set the modes directory."
 -msgstr ""
 +msgstr "Ustawienie katalogu trybów."
  
- #: mcrypt.gaa:132
+ #: mcrypt.gaa:133
  msgid "HASH "
 -msgstr ""
 +msgstr "SKRÓT "
  
- #: mcrypt.gaa:132
+ #: mcrypt.gaa:133
 -msgid ""
 -"Specify the hash algorithm to be used. Use the --list-hash parameter to view "
 -"the hash algorithms."
@@ -480,318 +491,328 @@
 +msgid "Specify the hash algorithm to be used. Use the --list-hash parameter to view the hash algorithms."
 +msgstr "Podanie algorytmu skrótu, jaki ma byæ u¿yty. Parametr --list-hash wypisze dostêpne algorytmy skrótu."
  
- #: mcrypt.gaa:133
+ #: mcrypt.gaa:134
  msgid "KEY1 KEY2...KEYN "
 -msgstr ""
 +msgstr "KLUCZ1 KLUCZ2...KLUCZN "
  
- #: mcrypt.gaa:133
+ #: mcrypt.gaa:134
  msgid "Specify the key(s)"
 -msgstr ""
 +msgstr "Podanie klucza(y)"
  
- #: mcrypt.gaa:134
+ #: mcrypt.gaa:135
  msgid "Do not use an IV."
 -msgstr ""
 +msgstr "Nie u¿ywanie IV."
  
- #: mcrypt.gaa:135
+ #: mcrypt.gaa:136
  msgid "Do not keep algorithm information in the encrypted file."
 -msgstr ""
 +msgstr "Nie przechowywanie informacji o algorytmie w zaszyfrowanym pliku."
  
- #: mcrypt.gaa:136
+ #: mcrypt.gaa:137
 -#, fuzzy
  msgid "Use gzip to compress files before encryption."
 -msgstr " -z --gzip                    kompresja gzip przed zaszyfrowaniem\n"
 +msgstr "U¿ycie kompresji gzip przed zaszyfrowaniem."
  
- #: mcrypt.gaa:137
+ #: mcrypt.gaa:138
 -#, fuzzy
  msgid "Use bzip2 to compress files before encryption."
 -msgstr " -p --bzip2                   kompresja bzip2 przed zaszyfrowaniem\n"
 +msgstr "U¿ycie kompresji bzip2 przed zaszyfrowaniem."
  
- #: mcrypt.gaa:138
+ #: mcrypt.gaa:139
  msgid "Immediately flush the output"
 -msgstr ""
 +msgstr "Natychmiastowe opró¿nienie wyj¶cia"
  
- #: mcrypt.gaa:139
+ #: mcrypt.gaa:140
  msgid "Double check passwords."
 -msgstr ""
 +msgstr "Podwójne sprawdzanie hase³."
  
- #: mcrypt.gaa:140
+ #: mcrypt.gaa:141
  msgid "Unlink the input file after encryption or decryption."
 -msgstr ""
 +msgstr "Usuniêcie pliku wej¶ciowego po zaszyfrowaniu lub rozszyfrowaniu."
  
- #: mcrypt.gaa:141
+ #: mcrypt.gaa:142
  msgid "Do not delete the output file if decryption failed."
 -msgstr ""
 +msgstr "Nie usuwanie pliku wyj¶ciowego je¶li rozszyfrowanie nie powiedzie siê."
  
- #: mcrypt.gaa:142
+ #: mcrypt.gaa:143
  msgid "Prints timing information."
 -msgstr ""
 +msgstr "Wypisanie informacji o czasie."
  
- #: mcrypt.gaa:143
+ #: mcrypt.gaa:144
  msgid "Forces output to stdout."
 -msgstr ""
 +msgstr "Wymuszenie wyj¶cia na strumieñ wyj¶ciowy."
  
- #: mcrypt.gaa:144
+ #: mcrypt.gaa:145
  msgid "Echo asterisks when entering the password."
 -msgstr ""
 +msgstr "Pokazywanie gwiazdek przy wprowadzaniu has³a."
  
- #: mcrypt.gaa:145
+ #: mcrypt.gaa:146
  msgid "Use real random data (if your system supports it)."
 -msgstr ""
 +msgstr "U¿ycie prawdziwie losowych danych (je¶li system to obs³uguje)."
  
- #: mcrypt.gaa:146
+ #: mcrypt.gaa:147
  msgid "Prints a list of the supported algorithms and modes."
 -msgstr ""
 +msgstr "Wypisanie listy obs³ugiwanych algorytmów i trybów."
  
- #: mcrypt.gaa:147
+ #: mcrypt.gaa:148
  msgid "Prints a list of the supported key modes."
 -msgstr ""
 +msgstr "Wypisanie listy obs³ugiwanych trybów przetwarzania klucza."
  
- #: mcrypt.gaa:148
+ #: mcrypt.gaa:149
  msgid "Prints a list of the supported hash algorithms."
 -msgstr ""
 +msgstr "Wypisanie listy obs³ugiwanych algorytmów skrótu."
  
- #: mcrypt.gaa:149
+ #: mcrypt.gaa:150
  msgid "More information is displayed."
 -msgstr ""
 +msgstr "Wy¶wietlanie wiêkszej ilo¶ci informacji"
  
- #: mcrypt.gaa:150
+ #: mcrypt.gaa:151
  msgid "Suppress some non critical warnings."
 -msgstr ""
 +msgstr "Pominiêcie niektórych niekrytycznych ostrze¿eñ."
  
- #: mcrypt.gaa:151
+ #: mcrypt.gaa:152
  msgid "Prints this help"
 -msgstr ""
 +msgstr "Wypisanie tego opisu"
  
- #: mcrypt.gaa:152
+ #: mcrypt.gaa:153
  msgid "Prints the version number"
 -msgstr ""
 +msgstr "Wypisanie numeru wersji"
  
- #: mcrypt.gaa:153
+ #: mcrypt.gaa:154
  msgid "Displays license information."
 -msgstr ""
 +msgstr "Wy¶wietlenie informacji o licencji."
  
- #: src/rfc2440.c:278
+ #: src/rfc2440.c:311
  #, c-format
  msgid "Algorithm %s is not available in OpenPGP encryption.\n"
 -msgstr ""
 +msgstr "Algirytm %s nie jest dostêpny przy szyfrowaniu OpenPGP.\n"
  
- #: src/rfc2440.c:280
+ #: src/rfc2440.c:313
  #, c-format
  msgid "%s will be used instead.\n"
 -msgstr ""
 +msgstr "%s zostanie u¿yty zamiast niego.\n"
  
- #: src/rfc2440.c:531 src/rfc2440.c:582
+ #: src/rfc2440.c:564 src/rfc2440.c:615
  msgid "mhash_keygen_ext() failed.\n"
 -msgstr ""
 +msgstr "mhash_keygen_ext() nie powiod³o siê.\n"
  
- #: src/rfc2440.c:535 src/rfc2440.c:587
+ #: src/rfc2440.c:567 src/rfc2440.c:618
  msgid "Could not open module\n"
 -msgstr ""
 +msgstr "Nie mo¿na otworzyæ modu³u\n"
  
- #: src/rfc2440.c:564
+ #: src/rfc2440.c:597
  #, c-format
  msgid "OpenPGP: Unsupported key mode %s\n"
 -msgstr ""
 +msgstr "OpenPGP: Nie obs³ugiwany tryb przetwarzania klucza %s\n"
  
- #: src/rfc2440.c:717 src/rfc2440.c:768
+ #: src/rfc2440.c:748 src/rfc2440.c:798
  msgid "mcrypt_generic_init() failed\n"
 -msgstr ""
 +msgstr "mcrypt_generic_init() nie powiod³o siê\n"
  
- #: src/rfc2440.c:730
+ #: src/rfc2440.c:760
  msgid "decryption: wrong key.\n"
 -msgstr ""
 +msgstr "rozszyfrowywanie: b³êdny klucz.\n"
  
- #: src/rfc2440.c:842 src/rfc2440.c:930
+ #: src/rfc2440.c:872 src/rfc2440.c:960
  #, c-format
  msgid "zlib error `%s'.\n"
 -msgstr ""
 +msgstr "b³±d zlib `%s'.\n"
  
- #: src/rfc2440.c:843
+ #: src/rfc2440.c:873
  #, c-format
  msgid "compress: deflate returned %d.\n"
 -msgstr ""
 +msgstr "kompresja: deflate zwróci³o %d.\n"
  
- #: src/rfc2440.c:931
+ #: src/rfc2440.c:961
  #, c-format
  msgid "uncompress: inflate returned %d.\n"
 -msgstr ""
 +msgstr "dekompresja: inflate zwróci³o %d.\n"
  
- #: src/rfc2440.c:963
+ #: src/rfc2440.c:993
 -#, fuzzy
  msgid "Will decompress input file.\n"
 -msgstr "Dekompresja pliku wyj¶ciowego...\n"
 +msgstr "Plik wej¶ciowy zostanie zdekompresowany.\n"
  
- #: src/rfc2440.c:1018
+ #: src/rfc2440.c:1049
  msgid "Output file will be compressed.\n"
 -msgstr ""
 +msgstr "Plik wyj¶ciowy zostanie skompresowany.\n"
  
- #: src/rfc2440.c:1112
- msgid "Signatures can't be checked!\n"
--msgstr ""
-+msgstr "Nie mo¿na sprawdziæ sygnatur!\n"
- 
- #: src/popen.c:65 src/popen.c:75
+ #: src/rfc2440.c:1157
+ msgid "Unsupported OpenPGP packet!\n"
+@@ -633,321 +624,115 @@ msgstr ""
+ #: src/popen.c:64 src/popen.c:74
+ #, c-format
  msgid "command string is not correct!\n"
 -msgstr ""
 +msgstr "³añcuch polecenia jest niepoprawny!\n"
  
- #: src/popen.c:88 src/popen.c:91
+ #: src/popen.c:87 src/popen.c:90
+ #, c-format
  msgid "could not create pipe\n"
 -msgstr ""
 +msgstr "nie mo¿na utworzyæ potoku\n"
  
- #: src/popen.c:96
+ #: src/popen.c:95
+ #, c-format
  msgid "could not fork child process\n"
 -msgstr ""
 +msgstr "nie mo¿na utworzyæ procesu potomnego\n"
  
- #: src/popen.c:103
+ #: src/popen.c:102
+ #, c-format
  msgid "could not close write-access of child stdin!\n"
 -msgstr ""
 +msgstr "nie mo¿na zamkn±æ dla zapisu strumienia wej¶ciowego potomka!\n"
  
- #: src/popen.c:105
+ #: src/popen.c:104
+ #, c-format
  msgid "could not dup2 child stdin!\n"
 -msgstr ""
 +msgstr "nie mo¿na wykonaæ dup2 na strumieniu wej¶ciowym potomka!\n"
  
- #: src/popen.c:107 src/popen.c:124
+ #: src/popen.c:106 src/popen.c:123
+ #, c-format
  msgid "could not close read-access of child stdin!\n"
 -msgstr ""
 +msgstr "nie mo¿na zamkn±æ dla odczytu strumienia wej¶ciowego potomka!\n"
  
- #: src/popen.c:112
+ #: src/popen.c:111
+ #, c-format
  msgid "could not close read-access of child stdout!\n"
 -msgstr ""
 +msgstr "nie mo¿na zamkn±æ dla odczytu strumienia wyj¶ciowego potomka!\n"
  
- #: src/popen.c:114
+ #: src/popen.c:113
+ #, c-format
  msgid "could not dup2 child stdout!\n"
 -msgstr ""
 +msgstr "nie mo¿na wykonaæ dupa2 na strumieniu wyj¶ciowym potomka!\n"
  
- #: src/popen.c:116 src/popen.c:130
+ #: src/popen.c:115 src/popen.c:129
+ #, c-format
  msgid "could not close write-access of child stdout!\n"
 -msgstr ""
 +msgstr "nie mo¿na zamkn±æ dla zapisu strumienia wyj¶ciowego potomka!\n"
  
- #: src/popen.c:126
+ #: src/popen.c:125
+ #, c-format
  msgid "could not fdopen child stdin pipe!\n"
 -msgstr ""
 +msgstr "nie mo¿na wykonaæ fdopen na potoku wej¶ciowym potomka!\n"
  
- #: src/popen.c:132
+ #: src/popen.c:131
+ #, c-format
  msgid "could not fdopen child stdout pipe!\n"
 -msgstr ""
 +msgstr "nie mo¿na wykonaæ fdopen na potoku wyj¶ciowym potomka!\n"
  
- #: src/random.c:101
+ #: src/random.c:94
  msgid "mhash_init() failed."
 -msgstr ""
 +msgstr "mhash_init() nie powiod³o siê."
  
- #: src/random.c:131
+ #: src/random.c:124
  msgid "Error while reading random data\n"
 -msgstr ""
 +msgstr "B³±d podczas odczytu danych losowych\n"
  
- #: src/random.c:155 src/classic.c:119 src/classic.c:534
+ #: src/random.c:148 src/classic.c:118 src/classic.c:533
  msgid "Mcrypt failed to open module.\n"
 -msgstr ""
 +msgstr "Mcrypt nie móg³ otworzyæ modu³u.\n"
  
- #: src/random.c:158
+ #: src/random.c:151
  msgid "Mcrypt failed to initialize cipher.\n"
 -msgstr ""
 +msgstr "Mcrypt nie móg³ zainicjowaæ szyfru.\n"
  
- #: src/rndunix.c:826
+ #: src/rndunix.c:827
  msgid "Child had pid 0!"
 -msgstr ""
 +msgstr "Potomek mia³ pid 0!"
  
- #: src/classic.c:228
+ #: src/classic.c:227
 -#, fuzzy, c-format
 +#, c-format
  msgid "Error in keymode '%s'.\n"
 -msgstr "B³±d w argumentach.\n"
 +msgstr "B³±d w trybie przetwarzania klucza '%s'.\n"
  
- #: src/classic.c:285 src/classic.c:590
+ #: src/classic.c:284 src/classic.c:589
  msgid "mhash initialization failed.\n"
 -msgstr ""
 +msgstr "Inicjalizacja mhash nie powiod³a siê.\n"
  
- #: src/classic.c:362
+ #: src/classic.c:361
  msgid "Memory error\n"
 -msgstr ""
 +msgstr "B³±d pamiêci\n"
  
- #: src/classic.c:514
+ #: src/classic.c:513
  msgid "No valid file headers found.\n"
 -msgstr ""
 +msgstr "Nie znaleziono poprawnych nag³ówków pliku.\n"
  
- #: src/classic.c:645 src/classic.c:718
+ #: src/classic.c:644 src/classic.c:717
 -#, fuzzy
  msgid "Corrupted file.\n"
 -msgstr "Uszkodzony plik lub b³êdny klucz.\n"
 +msgstr "Uszkodzony plik.\n"
  
- #: src/classic.c:664
+ #: src/classic.c:663
  #, c-format
  msgid "Unexpected error [%d]\n"
 -msgstr ""
 +msgstr "Nieoczekiwany b³±d [%d]\n"
  
- #: src/classic.c:910 src/classic.c:919
+ #: src/classic.c:909 src/classic.c:918
 -#, fuzzy
  msgid "Decompressing the output file...\n"
  msgstr "Dekompresja pliku wyj¶ciowego...\n"
  
- #: src/classic.c:942
+ #: src/classic.c:941
 -#, fuzzy, c-format
 +#, c-format
  msgid "%s check failed\n"
 -msgstr "Test CRC32 nie powiód³ siê.\n"
 +msgstr "Test %s nie powiód³ siê\n"
  
- #: src/classic.c:1056
--#, fuzzy
+ #: src/classic.c:1054
+-#, fuzzy, c-format
++#, c-format
  msgid "Supported Hash Algorithms:\n"
 -msgstr "Brak algorytmu: %s\n"
 -
@@ -996,7 +1017,7 @@
 -#, fuzzy
 -#~ msgid "File %s was deleted.\n"
 -#~ msgstr "Plik %s rozszyfrowany.\n"
--
++msgstr "Obs³ugiwane algorytmy skrótu:\n
+ 
 -#~ msgid "Keyword not in proper hex format\n"
 -#~ msgstr "Klucz nie jest w poprawnym formacie szesnastkowym.\n"
-+msgstr "Obs³ugiwane algorytmy skrótu:\n"
