@@ -1,28 +1,28 @@
-diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
---- mcrypt-2.6.7/po/pl.po	2007-11-07 18:15:11.000000000 +0100
-+++ mcrypt-2.6.7-new/po/pl.po	2008-09-30 14:29:06.475156866 +0200
+--- mcrypt-2.6.7/po/pl.po.orig	2007-11-07 18:15:11.000000000 +0100
++++ mcrypt-2.6.7/po/pl.po	2008-10-14 21:12:53.170630631 +0200
 @@ -1,15 +1,16 @@
 -# mcrypt 2.2 
 +# Polish translations for mcrypt
  # Copyright (C) 1999 Free Software Foundation, Inc.
  # Janusz A. Urbanowicz <alex@bofh.net.pl>, 1999
-+# Jakub Bogusz <qboosh@pld.org.pl>, 2003
++# Jakub Bogusz <qboosh@pld-linux.org>, 2003-2008
  #
  msgid ""
  msgstr ""
 -"Project-Id-Version: mcrypt 2.2.0\n"
-+"Project-Id-Version: mcrypt 2.6.4\n"
++"Project-Id-Version: mcrypt 2.6.7\n"
  "Report-Msgid-Bugs-To: \n"
  "POT-Creation-Date: 2007-11-07 19:15+0200\n"
 -"PO-Revision-Date: 1999-06-28 21:12+02:00\n"
-+"PO-Revision-Date: 2003-05-10 19:25+0200\n"
- "Last-Translator: Janusz A. Urbanowicz <alex@bofh.net.pl>\n"
+-"Last-Translator: Janusz A. Urbanowicz <alex@bofh.net.pl>\n"
 -"Language-Team: Polish <pl@li.org>\n"
++"PO-Revision-Date: 2008-10-14 21:08+0200\n"
++"Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 +"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=ISO-8859-2\n"
  "Content-Transfer-Encoding: 8bit\n"
-@@ -37,27 +38,27 @@ msgstr "Proszê u¿yæ kombinacji cyfr i ma
+@@ -37,27 +38,27 @@
  #: src/extra.c:190 src/extra.c:195 src/extra.c:200 src/extra.c:205
  #: src/extra.c:210 src/extra.c:215
  msgid "Unsupported version of encrypted file\n"
@@ -59,7 +59,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  "algorithm manualy.\n"
  msgstr ""
  "Uzyskanie informacji o algorytmie niemo¿liwe. U¿yj argumentu --bare i podaj\n"
-@@ -89,16 +90,16 @@ msgstr "%s: %s ju¿ istnieje, czy chcesz 
+@@ -89,16 +90,15 @@
  
  #: src/extra.c:615
  msgid "Could not push character back to stream\n"
@@ -67,10 +67,10 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
 +msgstr "Nie mo¿na wepchn±æ znaku z powrotem do strumienia\n"
  
  #: src/extra.c:623
- #, fuzzy
+-#, fuzzy
  msgid "Could not open file\n"
 -msgstr "Uszkodzony plik lub b³êdny klucz.\n"
-+msgstr "Nie mo¿na otworzyæ pliku\n"
++msgstr "Nie uda³o siê otworzyæ pliku\n"
  
  #: src/extra.c:636
  msgid "An OpenPGP encrypted file has been detected.\n"
@@ -79,7 +79,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/extra.c:651
  #, c-format
-@@ -108,51 +109,55 @@ msgid ""
+@@ -108,51 +108,55 @@
  "Mode: %s\n"
  "Keyword mode: %s\n"
  msgstr ""
@@ -147,7 +147,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/extra.c:748
  #, c-format
-@@ -160,6 +165,8 @@ msgid ""
+@@ -160,6 +164,8 @@
  "Processed %.3f MB, at a %.3f MB/sec rate (1 MB == 1000000 Bytes).\n"
  "\n"
  msgstr ""
@@ -156,7 +156,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/extra.c:755
  #, c-format
-@@ -167,6 +174,8 @@ msgid ""
+@@ -167,6 +173,8 @@
  "Processed %.3f KB, at a %.3f KB/sec rate (1 KB == 1000 Bytes).\n"
  "\n"
  msgstr ""
@@ -165,7 +165,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/mcrypt.c:80
  #, c-format
-@@ -175,9 +184,12 @@ msgid ""
+@@ -175,9 +183,12 @@
  "Report bugs to mcrypt-dev@lists.hellug.gr.\n"
  "\n"
  msgstr ""
@@ -179,7 +179,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  msgid ""
  "\n"
  "Copyright (C) 1998-2002 Nikos Mavroyanopoulos\n"
-@@ -197,99 +209,90 @@ msgid ""
+@@ -197,99 +208,90 @@
  "\n"
  msgstr ""
  "\n"
@@ -200,7 +200,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
 -"Wraz z tym programem powiniene¶ otrzymaæ kopiê Powszechnej Licencji\n"
 -"Publicznej GNU. Je¶li nie otrzyma³e¶, napisz do Free Software Foundation,\n"
 +"Kopia Powszechnej Licencji Publicznej GNU powinna byæ dostarczona wraz\n"
-++"z tym programem. Je¶li nie, mo¿na napisaæ do Free Software Foundation,\n"
++"z tym programem. Je¶li nie, mo¿na napisaæ do Free Software Foundation,\n"
  "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
  "\n"
  
@@ -306,7 +306,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/mcrypt.c:487
  #, c-format
-@@ -323,17 +326,17 @@ msgstr ""
+@@ -323,17 +325,17 @@
  "Parametr --help poda wiêcej informacji.\n"
  
  #: src/mcrypt.c:549
@@ -328,7 +328,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  msgid "Stdin was decrypted.\n"
  msgstr "Strumieñ wej¶ciowy rozszyfrowany.\n"
  
-@@ -347,12 +350,12 @@ msgid "Stdin was NOT decrypted successfu
+@@ -347,12 +349,12 @@
  msgstr "Strumieñ wej¶ciowy NIE zosta³ poprawnie rozszyfrowany.\n"
  
  #: src/mcrypt.c:639
@@ -343,7 +343,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  msgid "Stdin was encrypted.\n"
  msgstr "Strumieñ wej¶ciowy zaszyfrowany.\n"
  
-@@ -367,11 +370,11 @@ msgstr "Strumieñ wej¶ciowy NIE zosta³ po
+@@ -367,11 +369,11 @@
  
  #: src/mcrypt.c:732
  msgid "Unknown suffix. Will append '.dc'.\n"
@@ -357,7 +357,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/xmalloc.c:37 src/xmalloc.c:55 src/xmalloc.c:72 src/xmalloc.c:91
  #: src/xmalloc.c:107 src/xmalloc.c:124 src/xmalloc.c:146
-@@ -380,21 +383,21 @@ msgid "Cannot allocate memory\n"
+@@ -380,574 +382,355 @@
  msgstr "Nie mo¿na uzyskaæ przydzia³u pamiêci.\n"
  
  #: mcrypt.gaa:120
@@ -386,7 +386,8 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: mcrypt.gaa:122
  msgid "Use the native (mcrypt) file format."
-@@ -402,229 +405,217 @@ msgstr ""
+-msgstr ""
++msgstr "U¿ycie natywnego formatu plików (mcrypt)."
  
  #: mcrypt.gaa:123 mcrypt.gaa:125
  msgid "INTEGER "
@@ -672,7 +673,9 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
  
  #: src/rfc2440.c:1157
  msgid "Unsupported OpenPGP packet!\n"
-@@ -633,321 +624,115 @@ msgstr ""
+-msgstr ""
++msgstr "Nieobs³ugiwany pakiet OpenPGP!\n"
+ 
  #: src/popen.c:64 src/popen.c:74
  #, c-format
  msgid "command string is not correct!\n"
@@ -1017,7 +1020,7 @@ diff -burNp mcrypt-2.6.7/po/pl.po mcrypt-2.6.7-new/po/pl.po
 -#, fuzzy
 -#~ msgid "File %s was deleted.\n"
 -#~ msgstr "Plik %s rozszyfrowany.\n"
-+msgstr "Obs³ugiwane algorytmy skrótu:\n
- 
+-
 -#~ msgid "Keyword not in proper hex format\n"
 -#~ msgstr "Klucz nie jest w poprawnym formacie szesnastkowym.\n"
++msgstr "Obs³ugiwane algorytmy skrótu:\n"
