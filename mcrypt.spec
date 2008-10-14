@@ -2,20 +2,21 @@ Summary:	Mcrypt - simple crypting program
 Summary(pl.UTF-8):	Mcrypt - prosty program szyfrujący
 Name:		mcrypt
 Version:	2.6.7
-Release:	1
-License:	GPL
-Group:		Applications
+Release:	2
+License:	GPL v3+
+Group:		Applications/Text
 Source0:	http://dl.sourceforge.net/mcrypt/%{name}-%{version}.tar.gz
 # Source0-md5:	ca202566d1a336a87266021e97563c81
 Patch0:		%{name}-man_fix.patch
 Patch1:		%{name}-pl.po-update.patch
 URL:		http://mcrypt.sourceforge.net/
-BuildRequires:	autoconf >= 2.59
+BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	libmcrypt-devel >= 2.5.0
 BuildRequires:	libtool
 BuildRequires:	mhash-devel >= 0.8.15
+BuildRequires:	zlib-devel
 Requires:	libmcrypt >= 2.5.0
 Requires:	mhash >= 0.8.15
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -69,5 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS TODO  doc/{FORMAT,magic,sample.mcryptrc}
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_bindir}/mcrypt
+%attr(755,root,root) %{_bindir}/mdecrypt
+%{_mandir}/man1/mcrypt.1*
+%{_mandir}/man1/mdecrypt.1*
