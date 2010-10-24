@@ -1,22 +1,22 @@
---- mcrypt-2.6.7/po/pl.po.orig	2007-11-07 18:15:11.000000000 +0100
-+++ mcrypt-2.6.7/po/pl.po	2008-10-14 21:12:53.170630631 +0200
+--- mcrypt-2.6.8/po/pl.po.orig	2008-11-16 21:09:50.000000000 +0100
++++ mcrypt-2.6.8/po/pl.po	2010-10-24 08:05:11.831743558 +0200
 @@ -1,15 +1,16 @@
 -# mcrypt 2.2 
 +# Polish translations for mcrypt
  # Copyright (C) 1999 Free Software Foundation, Inc.
  # Janusz A. Urbanowicz <alex@bofh.net.pl>, 1999
-+# Jakub Bogusz <qboosh@pld-linux.org>, 2003-2008
++# Jakub Bogusz <qboosh@pld-linux.org>, 2003-2010
  #
  msgid ""
  msgstr ""
 -"Project-Id-Version: mcrypt 2.2.0\n"
-+"Project-Id-Version: mcrypt 2.6.7\n"
++"Project-Id-Version: mcrypt 2.6.8\n"
  "Report-Msgid-Bugs-To: \n"
- "POT-Creation-Date: 2007-11-07 19:15+0200\n"
+ "POT-Creation-Date: 2008-11-16 22:09+0200\n"
 -"PO-Revision-Date: 1999-06-28 21:12+02:00\n"
 -"Last-Translator: Janusz A. Urbanowicz <alex@bofh.net.pl>\n"
 -"Language-Team: Polish <pl@li.org>\n"
-+"PO-Revision-Date: 2008-10-14 21:08+0200\n"
++"PO-Revision-Date: 2010-10-24 07:52+0200\n"
 +"Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 +"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
@@ -357,7 +357,7 @@
  
  #: src/xmalloc.c:37 src/xmalloc.c:55 src/xmalloc.c:72 src/xmalloc.c:91
  #: src/xmalloc.c:107 src/xmalloc.c:124 src/xmalloc.c:146
-@@ -380,574 +382,355 @@
+@@ -380,574 +382,364 @@
  msgstr "Nie mo¿na uzyskaæ przydzia³u pamiêci.\n"
  
  #: mcrypt.gaa:120
@@ -365,18 +365,16 @@
 +#, c-format
  msgid ""
  "Mcrypt encrypts and decrypts files with symmetric encryption algorithms.\n"
--"Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o "
--"keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
-+"Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
+ "Usage: mcrypt [-dFusgbhLvrzp] [-f keyfile] [-k key1 key2 ...] [-m mode] [-o "
+ "keymode] [-s keysize] [-a algorithm] [-c config_file] [file ...]\n"
  "\n"
  msgstr ""
 -"Sk³adnia: mcrypt [-dLFus87bhvrx] [-f plik kluczy] [-k klucz1 klucz2 ...]\n"
--"                 [-m tryb] [-o tryb przetwarzania klucza] [-a algorytm]\n"
--"                 [-c plik konfiguracyjny] [plik]\n"
 +"Mcrypt szyfruje i rozszyfrowuje pliki przy u¿yciu szyfrów symetrycznych.\n"
 +"Sk³adnia: mcrypt [-dFusgbhLvrzp] [-f plik kluczy] [-k klucz1 klucz2 ...]\n"
-+"                 [-m tryb] [-o tryb przetwarzania klucza] [-s rozmiar klucza]\n"
-+"                 [-a algorytm] [-c plik konfiguracyjny] [plik ...]\n"
+ "                 [-m tryb] [-o tryb przetwarzania klucza] [-a algorytm]\n"
+-"                 [-c plik konfiguracyjny] [plik]\n"
++"                 [-c plik konfiguracyjny] [plik ...]\n"
  "\n"
  
  #: mcrypt.gaa:121
@@ -392,7 +390,7 @@
  #: mcrypt.gaa:123 mcrypt.gaa:125
  msgid "INTEGER "
 -msgstr ""
-+msgstr "LICZBA"
++msgstr "LICZBA "
  
  #: mcrypt.gaa:123
  msgid "Sets the compression level for openpgp packets (0 disables)."
@@ -415,11 +413,10 @@
 +msgstr "TRYB KLUCZA "
  
  #: mcrypt.gaa:126
--msgid ""
--"Specify the keyword mode. Use the --list-keymodes parameter to view all "
--"modes."
+ msgid ""
+ "Specify the keyword mode. Use the --list-keymodes parameter to view all "
+ "modes."
 -msgstr ""
-+msgid "Specify the keyword mode. Use the --list-keymodes parameter to view all modes."
 +msgstr "Tryb przetwarzania klucza. Parametr --list-keycodes poda wszystkie tryby."
  
  #: mcrypt.gaa:127 mcrypt.gaa:128
@@ -444,11 +441,10 @@
 +msgstr "ALGORYTM "
  
  #: mcrypt.gaa:129
--msgid ""
--"Specify the encryption and decryption algorithm. Use the --list parameter to "
--"see the supported algorithms."
+ msgid ""
+ "Specify the encryption and decryption algorithm. Use the --list parameter to "
+ "see the supported algorithms."
 -msgstr ""
-+msgid "Specify the encryption and decryption algorithm. Use the --list parameter to see the supported algorithms."
 +msgstr "Podanie algorytmu szyfrowania. Parametr --list wypisze obs³ugiwane algorytmy."
  
  #: mcrypt.gaa:130 mcrypt.gaa:132
@@ -467,11 +463,10 @@
 +msgstr "TRYB "
  
  #: mcrypt.gaa:131
--msgid ""
--"Specify the encryption and decryption mode. Use the --list parameter to see "
--"the supported modes."
+ msgid ""
+ "Specify the encryption and decryption mode. Use the --list parameter to see "
+ "the supported modes."
 -msgstr ""
-+msgid "Specify the encryption and decryption mode. Use the --list parameter to see the supported modes."
 +msgstr "Podanie trybu szyfrowania. Parametr --list wypisze obs³ugiwane tryby."
  
  #: mcrypt.gaa:132
@@ -485,11 +480,10 @@
 +msgstr "SKRÓT "
  
  #: mcrypt.gaa:133
--msgid ""
--"Specify the hash algorithm to be used. Use the --list-hash parameter to view "
--"the hash algorithms."
+ msgid ""
+ "Specify the hash algorithm to be used. Use the --list-hash parameter to view "
+ "the hash algorithms."
 -msgstr ""
-+msgid "Specify the hash algorithm to be used. Use the --list-hash parameter to view the hash algorithms."
 +msgstr "Podanie algorytmu skrótu, jaki ma byæ u¿yty. Parametr --list-hash wypisze dostêpne algorytmy skrótu."
  
  #: mcrypt.gaa:134
@@ -510,7 +504,7 @@
  #: mcrypt.gaa:136
  msgid "Do not keep algorithm information in the encrypted file."
 -msgstr ""
-+msgstr "Nie przechowywanie informacji o algorytmie w zaszyfrowanym pliku."
++msgstr "Nieprzechowywanie informacji o algorytmie w zaszyfrowanym pliku."
  
  #: mcrypt.gaa:137
 -#, fuzzy
@@ -542,7 +536,7 @@
  #: mcrypt.gaa:142
  msgid "Do not delete the output file if decryption failed."
 -msgstr ""
-+msgstr "Nie usuwanie pliku wyj¶ciowego je¶li rozszyfrowanie nie powiedzie siê."
++msgstr "Nieusuwanie pliku wyj¶ciowego je¶li rozszyfrowanie nie powiedzie siê."
  
  #: mcrypt.gaa:143
  msgid "Prints timing information."
@@ -552,7 +546,7 @@
  #: mcrypt.gaa:144
  msgid "Forces output to stdout."
 -msgstr ""
-+msgstr "Wymuszenie wyj¶cia na strumieñ wyj¶ciowy."
++msgstr "Wymuszenie wyj¶cia na standardowe wyj¶cie."
  
  #: mcrypt.gaa:145
  msgid "Echo asterisks when entering the password."
@@ -582,7 +576,7 @@
  #: mcrypt.gaa:150
  msgid "More information is displayed."
 -msgstr ""
-+msgstr "Wy¶wietlanie wiêkszej ilo¶ci informacji"
++msgstr "Wy¶wietlanie wiêkszej ilo¶ci informacji."
  
  #: mcrypt.gaa:151
  msgid "Suppress some non critical warnings."
@@ -604,74 +598,74 @@
 -msgstr ""
 +msgstr "Wy¶wietlenie informacji o licencji."
  
- #: src/rfc2440.c:311
+ #: src/rfc2440.c:315
  #, c-format
  msgid "Algorithm %s is not available in OpenPGP encryption.\n"
 -msgstr ""
 +msgstr "Algirytm %s nie jest dostêpny przy szyfrowaniu OpenPGP.\n"
  
- #: src/rfc2440.c:313
+ #: src/rfc2440.c:317
  #, c-format
  msgid "%s will be used instead.\n"
 -msgstr ""
 +msgstr "%s zostanie u¿yty zamiast niego.\n"
  
- #: src/rfc2440.c:564 src/rfc2440.c:615
+ #: src/rfc2440.c:568 src/rfc2440.c:619
  msgid "mhash_keygen_ext() failed.\n"
 -msgstr ""
 +msgstr "mhash_keygen_ext() nie powiod³o siê.\n"
  
- #: src/rfc2440.c:567 src/rfc2440.c:618
+ #: src/rfc2440.c:571 src/rfc2440.c:622
  msgid "Could not open module\n"
 -msgstr ""
 +msgstr "Nie mo¿na otworzyæ modu³u\n"
  
- #: src/rfc2440.c:597
+ #: src/rfc2440.c:601
  #, c-format
  msgid "OpenPGP: Unsupported key mode %s\n"
 -msgstr ""
-+msgstr "OpenPGP: Nie obs³ugiwany tryb przetwarzania klucza %s\n"
++msgstr "OpenPGP: Nieobs³ugiwany tryb przetwarzania klucza %s\n"
  
- #: src/rfc2440.c:748 src/rfc2440.c:798
+ #: src/rfc2440.c:756 src/rfc2440.c:805
  msgid "mcrypt_generic_init() failed\n"
 -msgstr ""
 +msgstr "mcrypt_generic_init() nie powiod³o siê\n"
  
- #: src/rfc2440.c:760
+ #: src/rfc2440.c:768
  msgid "decryption: wrong key.\n"
 -msgstr ""
 +msgstr "rozszyfrowywanie: b³êdny klucz.\n"
  
- #: src/rfc2440.c:872 src/rfc2440.c:960
+ #: src/rfc2440.c:878 src/rfc2440.c:966
  #, c-format
  msgid "zlib error `%s'.\n"
 -msgstr ""
 +msgstr "b³±d zlib `%s'.\n"
  
- #: src/rfc2440.c:873
+ #: src/rfc2440.c:879
  #, c-format
  msgid "compress: deflate returned %d.\n"
 -msgstr ""
 +msgstr "kompresja: deflate zwróci³o %d.\n"
  
- #: src/rfc2440.c:961
+ #: src/rfc2440.c:967
  #, c-format
  msgid "uncompress: inflate returned %d.\n"
 -msgstr ""
 +msgstr "dekompresja: inflate zwróci³o %d.\n"
  
- #: src/rfc2440.c:993
+ #: src/rfc2440.c:999
 -#, fuzzy
  msgid "Will decompress input file.\n"
 -msgstr "Dekompresja pliku wyj¶ciowego...\n"
 +msgstr "Plik wej¶ciowy zostanie zdekompresowany.\n"
  
- #: src/rfc2440.c:1049
+ #: src/rfc2440.c:1055
  msgid "Output file will be compressed.\n"
 -msgstr ""
 +msgstr "Plik wyj¶ciowy zostanie skompresowany.\n"
  
- #: src/rfc2440.c:1157
+ #: src/rfc2440.c:1165
  msgid "Unsupported OpenPGP packet!\n"
 -msgstr ""
 +msgstr "Nieobs³ugiwany pakiet OpenPGP!\n"
@@ -698,7 +692,7 @@
  #, c-format
  msgid "could not close write-access of child stdin!\n"
 -msgstr ""
-+msgstr "nie mo¿na zamkn±æ dla zapisu strumienia wej¶ciowego potomka!\n"
++msgstr "nie mo¿na zamkn±æ dla zapisu standardowego wej¶cia potomka!\n"
  
  #: src/popen.c:104
  #, c-format
@@ -710,13 +704,13 @@
  #, c-format
  msgid "could not close read-access of child stdin!\n"
 -msgstr ""
-+msgstr "nie mo¿na zamkn±æ dla odczytu strumienia wej¶ciowego potomka!\n"
++msgstr "nie mo¿na zamkn±æ dla odczytu standardowego wej¶cia potomka!\n"
  
  #: src/popen.c:111
  #, c-format
  msgid "could not close read-access of child stdout!\n"
 -msgstr ""
-+msgstr "nie mo¿na zamkn±æ dla odczytu strumienia wyj¶ciowego potomka!\n"
++msgstr "nie mo¿na zamkn±æ dla odczytu standardowego wyj¶cia potomka!\n"
  
  #: src/popen.c:113
  #, c-format
@@ -728,7 +722,7 @@
  #, c-format
  msgid "could not close write-access of child stdout!\n"
 -msgstr ""
-+msgstr "nie mo¿na zamkn±æ dla zapisu strumienia wyj¶ciowego potomka!\n"
++msgstr "nie mo¿na zamkn±æ dla zapisu standardowego wyj¶cia potomka!\n"
  
  #: src/popen.c:125
  #, c-format
