@@ -12,7 +12,7 @@ Patch1:		%{name}-pl.po-update.patch
 URL:		http://mcrypt.sourceforge.net/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	libmcrypt-devel >= 2.5.0
 BuildRequires:	libtool
 BuildRequires:	mhash-devel >= 0.8.15
